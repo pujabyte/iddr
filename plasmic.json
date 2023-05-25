@@ -209,6 +209,11 @@
           "id": "1Bws4u9W1",
           "name": "iddr-hand-coin-hero.png",
           "filePath": "../public/plasmic/iddr/images/iddrHandCoinHeropng.png"
+        },
+        {
+          "id": "4yCu3sITc",
+          "name": "IDDR Rounded.jpg",
+          "filePath": "../public/plasmic/iddr/images/iddrRoundedjpg.jpg"
         }
       ],
       "indirect": false,

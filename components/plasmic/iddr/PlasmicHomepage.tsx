@@ -36,6 +36,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import { PlasmicHead } from "@plasmicapp/react-web"; // plasmic-import: T1KJa5bGl4Ip-/codeComponent
 import Navbar from "../../Navbar"; // plasmic-import: ThJz7UjPOLc/component
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal"; // plasmic-import: R6s1FdhksG/codeComponent
 import Button2 from "../../Button2"; // plasmic-import: R7FQakg198I/component
@@ -64,6 +65,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
+  pageMetadataOverride?: p.Flex<typeof PlasmicHead>;
   navbar?: p.Flex<typeof Navbar>;
   title?: p.Flex<"div">;
   desc?: p.Flex<"div">;
@@ -155,6 +157,15 @@ function PlasmicHomepage__RenderFunc(props: {
             sty.root
           )}
         >
+          <PlasmicHead
+            data-plasmic-name={"pageMetadataOverride"}
+            data-plasmic-override={overrides.pageMetadataOverride}
+            className={classNames("__wab_instance", sty.pageMetadataOverride)}
+            description={"Inovasi mata uang digital Nusantara" as const}
+            image={"/plasmic/iddr/images/iddrRoundedjpg.jpg"}
+            title={"Indonesia Digital Rupiah" as const}
+          />
+
           <Navbar
             data-plasmic-name={"navbar"}
             data-plasmic-override={overrides.navbar}
@@ -1239,6 +1250,7 @@ function PlasmicHomepage__RenderFunc(props: {
 const PlasmicDescendants = {
   root: [
     "root",
+    "pageMetadataOverride",
     "navbar",
     "title",
     "desc",
@@ -1250,6 +1262,7 @@ const PlasmicDescendants = {
     "menuOverlay",
     "link"
   ],
+  pageMetadataOverride: ["pageMetadataOverride"],
   navbar: ["navbar"],
   title: ["title"],
   desc: ["desc"],
@@ -1266,6 +1279,7 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  pageMetadataOverride: typeof PlasmicHead;
   navbar: typeof Navbar;
   title: "div";
   desc: "div";
@@ -1338,6 +1352,7 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    pageMetadataOverride: makeNodeComponent("pageMetadataOverride"),
     navbar: makeNodeComponent("navbar"),
     title: makeNodeComponent("title"),
     desc: makeNodeComponent("desc"),
