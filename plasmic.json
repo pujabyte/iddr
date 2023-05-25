@@ -153,6 +153,11 @@
           "id": "IRUc9KI0r",
           "name": "hero-coin.png",
           "filePath": "../public/plasmic/iddr/images/heroCoinpng.png"
+        },
+        {
+          "id": "2ubSOhicI",
+          "name": "hero-coin-min.png",
+          "filePath": "../public/plasmic/iddr/images/heroCoinMinpng.png"
         }
       ],
       "indirect": false,

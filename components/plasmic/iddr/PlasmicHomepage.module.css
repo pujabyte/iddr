@@ -553,7 +553,7 @@
   display: block;
   width: 600px;
   height: 600px;
-  background: url("/plasmic/iddr/images/heroCoinpng.png") top 50% left 50% / cover repeat;
+  background: url("/plasmic/iddr/images/heroCoinMinpng.png") top 50% left 50% / cover no-repeat;
   flex-shrink: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
