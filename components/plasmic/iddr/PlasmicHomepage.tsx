@@ -571,7 +571,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             sty.h6___0Y1Yz
                           )}
                         >
-                          {"Yuli"}
+                          {"Liem Yuliana"}
                         </h6>
                         <div
                           className={classNames(

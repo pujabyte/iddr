@@ -214,6 +214,11 @@
           "id": "4yCu3sITc",
           "name": "IDDR Rounded.jpg",
           "filePath": "../public/plasmic/iddr/images/iddrRoundedjpg.jpg"
+        },
+        {
+          "id": "foubGjpRS",
+          "name": "iddr-temp-hero.png",
+          "filePath": "../public/plasmic/iddr/images/iddrTempHeropng.png"
         }
       ],
       "indirect": false,
