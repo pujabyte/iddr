@@ -186,6 +186,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         role={"img"}
                       />
                     }
+                    link={"#home" as const}
                     startIcon={
                       <ChecksvgIcon
                         className={classNames(projectcss.all, sty.svg__jOt3W)}
@@ -213,6 +214,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         role={"img"}
                       />
                     }
+                    link={"#about" as const}
                     startIcon={
                       <ChecksvgIcon
                         className={classNames(projectcss.all, sty.svg__hnGvC)}
@@ -240,6 +242,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         role={"img"}
                       />
                     }
+                    link={"#team" as const}
                     startIcon={
                       <ChecksvgIcon
                         className={classNames(projectcss.all, sty.svg__k2Jh1)}
@@ -270,6 +273,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         role={"img"}
                       />
                     }
+                    link={"#contact" as const}
                     startIcon={
                       <ChecksvgIcon
                         className={classNames(projectcss.all, sty.svg__wlRsu)}
@@ -311,7 +315,10 @@ function PlasmicHomepage__RenderFunc(props: {
                 ) : null}
               </p.Stack>
             </p.Stack>
-            <div className={classNames(projectcss.all, sty.freeBox__zoEqj)}>
+            <div
+              className={classNames(projectcss.all, sty.freeBox__zoEqj)}
+              id={"home" as const}
+            >
               <div className={classNames(projectcss.all, sty.columns__a7Wpx)}>
                 <div className={classNames(projectcss.all, sty.column__jxi8B)}>
                   <p.Stack
@@ -368,6 +375,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             role={"img"}
                           />
                         }
+                        link={"#about" as const}
                         shape={"rounded" as const}
                         startIcon={
                           <ChecksvgIcon
@@ -401,7 +409,10 @@ function PlasmicHomepage__RenderFunc(props: {
               </div>
             </div>
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox___1Seb)}>
+          <div
+            className={classNames(projectcss.all, sty.freeBox___1Seb)}
+            id={"about" as const}
+          >
             <div className={classNames(projectcss.all, sty.freeBox__yOjcJ)}>
               <p.Stack
                 as={"div"}
@@ -463,7 +474,10 @@ function PlasmicHomepage__RenderFunc(props: {
               </p.Stack>
             </div>
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__aO8ZD)}>
+          <div
+            className={classNames(projectcss.all, sty.freeBox__aO8ZD)}
+            id={"team" as const}
+          >
             <div className={classNames(projectcss.all, sty.freeBox__u44ZL)}>
               {true ? (
                 <p.Stack
@@ -709,7 +723,10 @@ function PlasmicHomepage__RenderFunc(props: {
               </p.Stack>
             </div>
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__dAw1O)}>
+          <div
+            className={classNames(projectcss.all, sty.freeBox__dAw1O)}
+            id={"contact" as const}
+          >
             <div className={classNames(projectcss.all, sty.freeBox__lcmS1)}>
               <p.Stack
                 as={"div"}

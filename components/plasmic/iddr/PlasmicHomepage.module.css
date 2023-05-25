@@ -5,6 +5,7 @@
   height: 100%;
   align-content: flex-start;
   justify-items: center;
+  background: #ffffff;
   min-width: 0;
   min-height: 0;
   grid-template-columns:
@@ -50,13 +51,14 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  position: relative;
-  top: 0;
-  left: 0;
+  position: fixed;
+  top: 0px;
+  left: 0px;
   z-index: 1;
-  right: 0;
+  backdrop-filter: blur(10px);
   grid-column-start: 1;
   grid-column-end: -1;
+  -webkit-backdrop-filter: blur(10px);
   padding: 16px;
 }
 .freeBox__nm9P > :global(.__wab_flex-container) {
@@ -363,7 +365,7 @@
   flex-direction: column;
   align-items: center;
   min-width: 0;
-  padding: 64px 32px;
+  padding: 144px 32px 64px;
 }
 .columns__a7Wpx {
   --plsmc-rc-col-gap: 0px;
@@ -574,6 +576,11 @@
   padding-bottom: 96px;
   grid-column-start: 1;
   grid-column-end: -1;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox___1Seb {
+    padding-bottom: 0px;
+  }
 }
 .freeBox__yOjcJ {
   display: flex;
