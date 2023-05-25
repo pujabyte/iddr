@@ -89,6 +89,32 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "button"
+        },
+        {
+          "id": "ThJz7UjPOLc",
+          "name": "Navbar",
+          "type": "managed",
+          "projectId": "dJqK6LEBeKixAKagJBAmzL",
+          "renderModuleFilePath": "plasmic/iddr/PlasmicNavbar.tsx",
+          "importSpec": {
+            "modulePath": "Navbar.tsx"
+          },
+          "cssFilePath": "plasmic/iddr/PlasmicNavbar.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "l7JCXcEFvGg",
+          "name": "MenuOverlay",
+          "type": "managed",
+          "projectId": "dJqK6LEBeKixAKagJBAmzL",
+          "renderModuleFilePath": "plasmic/iddr/PlasmicMenuOverlay.tsx",
+          "importSpec": {
+            "modulePath": "MenuOverlay.tsx"
+          },
+          "cssFilePath": "plasmic/iddr/PlasmicMenuOverlay.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -106,6 +132,16 @@
           "id": "4gS4A9ceiGe",
           "name": "Icon16Icon",
           "moduleFilePath": "plasmic/iddr/icons/PlasmicIcon__Icon16.tsx"
+        },
+        {
+          "id": "XTdEHy648t",
+          "name": "MenuSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/iddr/icons/PlasmicIcon__MenuSvgrepoComsvg.tsx"
+        },
+        {
+          "id": "3wjTpps_Fo",
+          "name": "CloseBoldSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/iddr/icons/PlasmicIcon__CloseBoldSvgrepoComsvg.tsx"
         }
       ],
       "images": [
@@ -158,6 +194,21 @@
           "id": "2ubSOhicI",
           "name": "hero-coin-min.png",
           "filePath": "../public/plasmic/iddr/images/heroCoinMinpng.png"
+        },
+        {
+          "id": "wMQhbYXMX",
+          "name": "bg-min.png",
+          "filePath": "../public/plasmic/iddr/images/bgMinpng.png"
+        },
+        {
+          "id": "-A2jRWU8Q",
+          "name": "IDDR landscape (1).png",
+          "filePath": "../public/plasmic/iddr/images/iddrLandscape1Png.png"
+        },
+        {
+          "id": "1Bws4u9W1",
+          "name": "iddr-hand-coin-hero.png",
+          "filePath": "../public/plasmic/iddr/images/iddrHandCoinHeropng.png"
         }
       ],
       "indirect": false,
@@ -172,6 +223,44 @@
           "id": "_5gNtUzhxNety",
           "name": "Fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ]
+    },
+    {
+      "projectId": "58GpZjZCWTaJ8AUhpCwt2K",
+      "projectApiToken": "DIkcfhBwjMCJSjcxfBkMuy4NImyytq5EWylxVcpS9t9EpdhnPQuBgBGxmk00AB1itMFa1KXTxOKnrjN2PN9nlA",
+      "projectName": "react-awesome-reveal",
+      "version": "3.15.0",
+      "cssFilePath": "plasmic/react_awesome_reveal/plasmic_react_awesome_reveal.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "R6s1FdhksG",
+          "name": "Reveal",
+          "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
+        }
+      ]
+    },
+    {
+      "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
+      "projectApiToken": "uZp069FLSLNVA2dpWnqC3BUaj3flvtNBNXt6e1b67rm4Uh6lGHgYJ65FCBXlOFTB5KDW7RmmOxIAzgHYCg",
+      "projectName": "plasmic-nav",
+      "version": "0.16.0",
+      "cssFilePath": "plasmic/plasmic_nav/plasmic_plasmic_nav.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "jGx9tiKJoex",
+          "name": "NavigationBar",
+          "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
       ]
     }
