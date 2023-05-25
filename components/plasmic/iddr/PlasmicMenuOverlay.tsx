@@ -64,11 +64,19 @@ export const PlasmicMenuOverlay__VariantProps = new Array<VariantPropType>();
 export type PlasmicMenuOverlay__ArgsType = {
   children?: React.ReactNode;
   children2?: React.ReactNode;
+  slot?: React.ReactNode;
+  slot2?: React.ReactNode;
+  slot3?: React.ReactNode;
+  slot4?: React.ReactNode;
 };
 type ArgPropType = keyof PlasmicMenuOverlay__ArgsType;
 export const PlasmicMenuOverlay__ArgProps = new Array<ArgPropType>(
   "children",
-  "children2"
+  "children2",
+  "slot",
+  "slot2",
+  "slot3",
+  "slot4"
 );
 
 export type PlasmicMenuOverlay__OverridesType = {
@@ -80,6 +88,10 @@ export type PlasmicMenuOverlay__OverridesType = {
 export interface DefaultMenuOverlayProps {
   children?: React.ReactNode;
   children2?: React.ReactNode;
+  slot?: React.ReactNode;
+  slot2?: React.ReactNode;
+  slot3?: React.ReactNode;
+  slot4?: React.ReactNode;
   className?: string;
 }
 
@@ -231,118 +243,190 @@ function PlasmicMenuOverlay__RenderFunc(props: {
               }}
             />
           </p.PlasmicLink>
-          <Button2
-            className={classNames("__wab_instance", sty.button2__pbUh)}
-            color={"clear" as const}
-            endIcon={
-              <Icon38Icon
-                className={classNames(projectcss.all, sty.svg__vTipp)}
-                role={"img"}
-              />
-            }
-            link={"#home" as const}
-            startIcon={
-              <ChecksvgIcon
-                className={classNames(projectcss.all, sty.svg__yFzKv)}
-                role={"img"}
-              />
-            }
-            submitsForm={true}
-          >
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__wAnEe
-              )}
-            >
-              {"Beranda"}
-            </div>
-          </Button2>
-          <Button2
-            className={classNames("__wab_instance", sty.button2__mE7M9)}
-            color={"clear" as const}
-            endIcon={
-              <Icon38Icon
-                className={classNames(projectcss.all, sty.svg__ajLl6)}
-                role={"img"}
-              />
-            }
-            link={"#about" as const}
-            startIcon={
-              <ChecksvgIcon
-                className={classNames(projectcss.all, sty.svg___94Up)}
-                role={"img"}
-              />
-            }
-            submitsForm={true}
-          >
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__jPaOg
-              )}
-            >
-              {"Tentang"}
-            </div>
-          </Button2>
-          <Button2
-            className={classNames("__wab_instance", sty.button2__oNnKc)}
-            color={"clear" as const}
-            endIcon={
-              <Icon38Icon
-                className={classNames(projectcss.all, sty.svg__jq3Ae)}
-                role={"img"}
-              />
-            }
-            link={"#team" as const}
-            startIcon={
-              <ChecksvgIcon
-                className={classNames(projectcss.all, sty.svg__kpIjt)}
-                role={"img"}
-              />
-            }
-            submitsForm={true}
-          >
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text___0Z1D3
-              )}
-            >
-              {"Tim"}
-            </div>
-          </Button2>
-          <Button2
-            className={classNames("__wab_instance", sty.button2__r9Bec)}
-            color={"clear" as const}
-            endIcon={
-              <Icon38Icon
-                className={classNames(projectcss.all, sty.svg___36O6O)}
-                role={"img"}
-              />
-            }
-            link={"#contact" as const}
-            startIcon={
-              <ChecksvgIcon
-                className={classNames(projectcss.all, sty.svg__fJiRe)}
-                role={"img"}
-              />
-            }
-            submitsForm={true}
-          >
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__clk5W
-              )}
-            >
-              {"Kontak"}
-            </div>
-          </Button2>
+          <div className={classNames(projectcss.all, sty.freeBox__chQjf)}>
+            {p.renderPlasmicSlot({
+              defaultContents: (
+                <Button2
+                  className={classNames("__wab_instance", sty.button2__dzebk)}
+                  color={"clear" as const}
+                  endIcon={
+                    <Icon38Icon
+                      className={classNames(projectcss.all, sty.svg__x5Spj)}
+                      role={"img"}
+                    />
+                  }
+                  link={"#home" as const}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["updateStateVariable"] = true
+                      ? (() => {
+                          const actionArgs = {};
+                          return __wrapUserFunction(
+                            {
+                              type: "InteractionLoc",
+                              actionName: "updateVariable",
+                              interactionUuid: "jMW_JjEX79",
+                              componentUuid: "l7JCXcEFvGg"
+                            },
+                            () =>
+                              (({
+                                variable,
+                                value,
+                                startIndex,
+                                deleteCount
+                              }) => {
+                                if (!variable) {
+                                  return;
+                                }
+                                const { objRoot, variablePath } = variable;
+                                undefined;
+                              })?.apply(null, [actionArgs]),
+                            actionArgs
+                          );
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["updateStateVariable"] === "object" &&
+                      typeof $steps["updateStateVariable"].then === "function"
+                    ) {
+                      $steps["updateStateVariable"] = await __wrapUserPromise(
+                        {
+                          type: "InteractionLoc",
+                          actionName: "updateVariable",
+                          interactionUuid: "jMW_JjEX79",
+                          componentUuid: "l7JCXcEFvGg"
+                        },
+                        $steps["updateStateVariable"]
+                      );
+                    }
+                  }}
+                  startIcon={
+                    <ChecksvgIcon
+                      className={classNames(projectcss.all, sty.svg__tU4D)}
+                      role={"img"}
+                    />
+                  }
+                  submitsForm={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__x3AX1
+                    )}
+                  >
+                    {"Beranda"}
+                  </div>
+                </Button2>
+              ),
+              value: args.slot
+            })}
+          </div>
+          <div className={classNames(projectcss.all, sty.freeBox__r4V2Z)}>
+            {p.renderPlasmicSlot({
+              defaultContents: (
+                <Button2
+                  className={classNames("__wab_instance", sty.button2__jaKj)}
+                  color={"clear" as const}
+                  endIcon={
+                    <Icon38Icon
+                      className={classNames(projectcss.all, sty.svg__gi9Bv)}
+                      role={"img"}
+                    />
+                  }
+                  link={"#about" as const}
+                  startIcon={
+                    <ChecksvgIcon
+                      className={classNames(projectcss.all, sty.svg__a7Iw)}
+                      role={"img"}
+                    />
+                  }
+                  submitsForm={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__eXkhb
+                    )}
+                  >
+                    {"Tentang"}
+                  </div>
+                </Button2>
+              ),
+              value: args.slot2
+            })}
+          </div>
+          <div className={classNames(projectcss.all, sty.freeBox__i7A6U)}>
+            {p.renderPlasmicSlot({
+              defaultContents: (
+                <Button2
+                  className={classNames("__wab_instance", sty.button2___2JGd9)}
+                  color={"clear" as const}
+                  endIcon={
+                    <Icon38Icon
+                      className={classNames(projectcss.all, sty.svg__kpHwz)}
+                      role={"img"}
+                    />
+                  }
+                  link={"#team" as const}
+                  startIcon={
+                    <ChecksvgIcon
+                      className={classNames(projectcss.all, sty.svg__xDm8R)}
+                      role={"img"}
+                    />
+                  }
+                  submitsForm={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___67P2I
+                    )}
+                  >
+                    {"Tim"}
+                  </div>
+                </Button2>
+              ),
+              value: args.slot3
+            })}
+          </div>
+          <div className={classNames(projectcss.all, sty.freeBox__uOhaw)}>
+            {p.renderPlasmicSlot({
+              defaultContents: (
+                <Button2
+                  className={classNames("__wab_instance", sty.button2__ceWw6)}
+                  color={"clear" as const}
+                  endIcon={
+                    <Icon38Icon
+                      className={classNames(projectcss.all, sty.svg__nXbiL)}
+                      role={"img"}
+                    />
+                  }
+                  link={"#contact" as const}
+                  startIcon={
+                    <ChecksvgIcon
+                      className={classNames(projectcss.all, sty.svg__eLa7H)}
+                      role={"img"}
+                    />
+                  }
+                  submitsForm={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__zc9HC
+                    )}
+                  >
+                    {"Kontak"}
+                  </div>
+                </Button2>
+              ),
+              value: args.slot4
+            })}
+          </div>
         </p.Stack>
       ) : null}
       {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : false) ? (

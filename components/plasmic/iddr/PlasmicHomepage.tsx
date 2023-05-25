@@ -65,7 +65,6 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   navbar?: p.Flex<typeof Navbar>;
-  button2?: p.Flex<typeof Button2>;
   title?: p.Flex<"div">;
   desc?: p.Flex<"div">;
   desc2?: p.Flex<"div">;
@@ -226,9 +225,10 @@ function PlasmicHomepage__RenderFunc(props: {
                         )}
                       >
                         <Button2
-                          data-plasmic-name={"button2"}
-                          data-plasmic-override={overrides.button2}
-                          className={classNames("__wab_instance", sty.button2)}
+                          className={classNames(
+                            "__wab_instance",
+                            sty.button2__ehw0L
+                          )}
                           endIcon={
                             <Icon38Icon
                               className={classNames(
@@ -710,20 +710,445 @@ function PlasmicHomepage__RenderFunc(props: {
               </div>
             </div>
           </div>
-          {(() => {
-            try {
-              return $state.navbar.isMenuOpen;
-            } catch (e) {
-              if (e instanceof TypeError) {
-                return true;
-              }
-              throw e;
-            }
-          })() ? (
+          {(
+            hasVariant(globalVariants, "screen", "mobileOnly")
+              ? (() => {
+                  try {
+                    return $state.navbar.isMenuOpen;
+                  } catch (e) {
+                    if (e instanceof TypeError) {
+                      return true;
+                    }
+                    throw e;
+                  }
+                })()
+              : (() => {
+                  try {
+                    return $state.navbar.isMenuOpen;
+                  } catch (e) {
+                    if (e instanceof TypeError) {
+                      return true;
+                    }
+                    throw e;
+                  }
+                })()
+          ) ? (
             <MenuOverlay
               data-plasmic-name={"menuOverlay"}
               data-plasmic-override={overrides.menuOverlay}
               className={classNames("__wab_instance", sty.menuOverlay)}
+              slot={
+                <Button2
+                  className={classNames("__wab_instance", sty.button2__bNeGi)}
+                  color={"clear" as const}
+                  endIcon={
+                    <Icon38Icon
+                      className={classNames(projectcss.all, sty.svg__wa2G5)}
+                      role={"img"}
+                    />
+                  }
+                  link={"#home" as const}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["updateNavbarIsMenuOpen"] = true
+                      ? (() => {
+                          const actionArgs = {
+                            variable: __wrapUserFunction(
+                              {
+                                type: "InteractionArgLoc",
+                                actionName: "updateVariable",
+                                interactionUuid: "C4HSr4IYhs",
+                                componentUuid: "S-EPZS57Iq32",
+                                argName: "variable"
+                              },
+                              () => ({
+                                objRoot: $state,
+                                variablePath: ["navbar", "isMenuOpen"]
+                              })
+                            ),
+                            operation: __wrapUserFunction(
+                              {
+                                type: "InteractionArgLoc",
+                                actionName: "updateVariable",
+                                interactionUuid: "C4HSr4IYhs",
+                                componentUuid: "S-EPZS57Iq32",
+                                argName: "operation"
+                              },
+                              () => 4
+                            )
+                          };
+                          return __wrapUserFunction(
+                            {
+                              type: "InteractionLoc",
+                              actionName: "updateVariable",
+                              interactionUuid: "C4HSr4IYhs",
+                              componentUuid: "S-EPZS57Iq32"
+                            },
+                            () =>
+                              (({
+                                variable,
+                                value,
+                                startIndex,
+                                deleteCount
+                              }) => {
+                                if (!variable) {
+                                  return;
+                                }
+                                const { objRoot, variablePath } = variable;
+
+                                const oldValue = p.get(objRoot, variablePath);
+                                p.set(objRoot, variablePath, !oldValue);
+                                return !oldValue;
+                              })?.apply(null, [actionArgs]),
+                            actionArgs
+                          );
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["updateNavbarIsMenuOpen"] === "object" &&
+                      typeof $steps["updateNavbarIsMenuOpen"].then ===
+                        "function"
+                    ) {
+                      $steps["updateNavbarIsMenuOpen"] =
+                        await __wrapUserPromise(
+                          {
+                            type: "InteractionLoc",
+                            actionName: "updateVariable",
+                            interactionUuid: "C4HSr4IYhs",
+                            componentUuid: "S-EPZS57Iq32"
+                          },
+                          $steps["updateNavbarIsMenuOpen"]
+                        );
+                    }
+                  }}
+                  startIcon={
+                    <ChecksvgIcon
+                      className={classNames(projectcss.all, sty.svg__t9Xdm)}
+                      role={"img"}
+                    />
+                  }
+                  submitsForm={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__kkldl
+                    )}
+                  >
+                    {"Beranda"}
+                  </div>
+                </Button2>
+              }
+              slot2={
+                <Button2
+                  className={classNames("__wab_instance", sty.button2__xFq2E)}
+                  color={"clear" as const}
+                  endIcon={
+                    <Icon38Icon
+                      className={classNames(projectcss.all, sty.svg__k7YTd)}
+                      role={"img"}
+                    />
+                  }
+                  link={"#about" as const}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["updateNavbarIsMenuOpen"] = true
+                      ? (() => {
+                          const actionArgs = {
+                            variable: __wrapUserFunction(
+                              {
+                                type: "InteractionArgLoc",
+                                actionName: "updateVariable",
+                                interactionUuid: "gClixM5Ir",
+                                componentUuid: "S-EPZS57Iq32",
+                                argName: "variable"
+                              },
+                              () => ({
+                                objRoot: $state,
+                                variablePath: ["navbar", "isMenuOpen"]
+                              })
+                            ),
+                            operation: __wrapUserFunction(
+                              {
+                                type: "InteractionArgLoc",
+                                actionName: "updateVariable",
+                                interactionUuid: "gClixM5Ir",
+                                componentUuid: "S-EPZS57Iq32",
+                                argName: "operation"
+                              },
+                              () => 4
+                            )
+                          };
+                          return __wrapUserFunction(
+                            {
+                              type: "InteractionLoc",
+                              actionName: "updateVariable",
+                              interactionUuid: "gClixM5Ir",
+                              componentUuid: "S-EPZS57Iq32"
+                            },
+                            () =>
+                              (({
+                                variable,
+                                value,
+                                startIndex,
+                                deleteCount
+                              }) => {
+                                if (!variable) {
+                                  return;
+                                }
+                                const { objRoot, variablePath } = variable;
+
+                                const oldValue = p.get(objRoot, variablePath);
+                                p.set(objRoot, variablePath, !oldValue);
+                                return !oldValue;
+                              })?.apply(null, [actionArgs]),
+                            actionArgs
+                          );
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["updateNavbarIsMenuOpen"] === "object" &&
+                      typeof $steps["updateNavbarIsMenuOpen"].then ===
+                        "function"
+                    ) {
+                      $steps["updateNavbarIsMenuOpen"] =
+                        await __wrapUserPromise(
+                          {
+                            type: "InteractionLoc",
+                            actionName: "updateVariable",
+                            interactionUuid: "gClixM5Ir",
+                            componentUuid: "S-EPZS57Iq32"
+                          },
+                          $steps["updateNavbarIsMenuOpen"]
+                        );
+                    }
+                  }}
+                  startIcon={
+                    <ChecksvgIcon
+                      className={classNames(projectcss.all, sty.svg___8FBP)}
+                      role={"img"}
+                    />
+                  }
+                  submitsForm={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__v6BfB
+                    )}
+                  >
+                    {"Tentang"}
+                  </div>
+                </Button2>
+              }
+              slot3={
+                <Button2
+                  className={classNames("__wab_instance", sty.button2__bKkjH)}
+                  color={"clear" as const}
+                  endIcon={
+                    <Icon38Icon
+                      className={classNames(projectcss.all, sty.svg__aL24D)}
+                      role={"img"}
+                    />
+                  }
+                  link={"#team" as const}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["updateNavbarIsMenuOpen"] = true
+                      ? (() => {
+                          const actionArgs = {
+                            variable: __wrapUserFunction(
+                              {
+                                type: "InteractionArgLoc",
+                                actionName: "updateVariable",
+                                interactionUuid: "HVcRtLNau",
+                                componentUuid: "S-EPZS57Iq32",
+                                argName: "variable"
+                              },
+                              () => ({
+                                objRoot: $state,
+                                variablePath: ["navbar", "isMenuOpen"]
+                              })
+                            ),
+                            operation: __wrapUserFunction(
+                              {
+                                type: "InteractionArgLoc",
+                                actionName: "updateVariable",
+                                interactionUuid: "HVcRtLNau",
+                                componentUuid: "S-EPZS57Iq32",
+                                argName: "operation"
+                              },
+                              () => 4
+                            )
+                          };
+                          return __wrapUserFunction(
+                            {
+                              type: "InteractionLoc",
+                              actionName: "updateVariable",
+                              interactionUuid: "HVcRtLNau",
+                              componentUuid: "S-EPZS57Iq32"
+                            },
+                            () =>
+                              (({
+                                variable,
+                                value,
+                                startIndex,
+                                deleteCount
+                              }) => {
+                                if (!variable) {
+                                  return;
+                                }
+                                const { objRoot, variablePath } = variable;
+
+                                const oldValue = p.get(objRoot, variablePath);
+                                p.set(objRoot, variablePath, !oldValue);
+                                return !oldValue;
+                              })?.apply(null, [actionArgs]),
+                            actionArgs
+                          );
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["updateNavbarIsMenuOpen"] === "object" &&
+                      typeof $steps["updateNavbarIsMenuOpen"].then ===
+                        "function"
+                    ) {
+                      $steps["updateNavbarIsMenuOpen"] =
+                        await __wrapUserPromise(
+                          {
+                            type: "InteractionLoc",
+                            actionName: "updateVariable",
+                            interactionUuid: "HVcRtLNau",
+                            componentUuid: "S-EPZS57Iq32"
+                          },
+                          $steps["updateNavbarIsMenuOpen"]
+                        );
+                    }
+                  }}
+                  startIcon={
+                    <ChecksvgIcon
+                      className={classNames(projectcss.all, sty.svg__nttXz)}
+                      role={"img"}
+                    />
+                  }
+                  submitsForm={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__vnY7U
+                    )}
+                  >
+                    {"Tim"}
+                  </div>
+                </Button2>
+              }
+              slot4={
+                <Button2
+                  className={classNames("__wab_instance", sty.button2__nzTzT)}
+                  color={"clear" as const}
+                  endIcon={
+                    <Icon38Icon
+                      className={classNames(projectcss.all, sty.svg__rmG2C)}
+                      role={"img"}
+                    />
+                  }
+                  link={"#contact" as const}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["updateNavbarIsMenuOpen"] = true
+                      ? (() => {
+                          const actionArgs = {
+                            variable: __wrapUserFunction(
+                              {
+                                type: "InteractionArgLoc",
+                                actionName: "updateVariable",
+                                interactionUuid: "kM2UgpTWd",
+                                componentUuid: "S-EPZS57Iq32",
+                                argName: "variable"
+                              },
+                              () => ({
+                                objRoot: $state,
+                                variablePath: ["navbar", "isMenuOpen"]
+                              })
+                            ),
+                            operation: __wrapUserFunction(
+                              {
+                                type: "InteractionArgLoc",
+                                actionName: "updateVariable",
+                                interactionUuid: "kM2UgpTWd",
+                                componentUuid: "S-EPZS57Iq32",
+                                argName: "operation"
+                              },
+                              () => 4
+                            )
+                          };
+                          return __wrapUserFunction(
+                            {
+                              type: "InteractionLoc",
+                              actionName: "updateVariable",
+                              interactionUuid: "kM2UgpTWd",
+                              componentUuid: "S-EPZS57Iq32"
+                            },
+                            () =>
+                              (({
+                                variable,
+                                value,
+                                startIndex,
+                                deleteCount
+                              }) => {
+                                if (!variable) {
+                                  return;
+                                }
+                                const { objRoot, variablePath } = variable;
+
+                                const oldValue = p.get(objRoot, variablePath);
+                                p.set(objRoot, variablePath, !oldValue);
+                                return !oldValue;
+                              })?.apply(null, [actionArgs]),
+                            actionArgs
+                          );
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["updateNavbarIsMenuOpen"] === "object" &&
+                      typeof $steps["updateNavbarIsMenuOpen"].then ===
+                        "function"
+                    ) {
+                      $steps["updateNavbarIsMenuOpen"] =
+                        await __wrapUserPromise(
+                          {
+                            type: "InteractionLoc",
+                            actionName: "updateVariable",
+                            interactionUuid: "kM2UgpTWd",
+                            componentUuid: "S-EPZS57Iq32"
+                          },
+                          $steps["updateNavbarIsMenuOpen"]
+                        );
+                    }
+                  }}
+                  startIcon={
+                    <ChecksvgIcon
+                      className={classNames(projectcss.all, sty.svg__d81Vk)}
+                      role={"img"}
+                    />
+                  }
+                  submitsForm={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__pot9A
+                    )}
+                  >
+                    {"Kontak"}
+                  </div>
+                </Button2>
+              }
             >
               <p.PlasmicLink
                 data-plasmic-name={"link"}
@@ -815,7 +1240,6 @@ const PlasmicDescendants = {
   root: [
     "root",
     "navbar",
-    "button2",
     "title",
     "desc",
     "desc2",
@@ -827,7 +1251,6 @@ const PlasmicDescendants = {
     "link"
   ],
   navbar: ["navbar"],
-  button2: ["button2"],
   title: ["title"],
   desc: ["desc"],
   desc2: ["desc2"],
@@ -844,7 +1267,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   navbar: typeof Navbar;
-  button2: typeof Button2;
   title: "div";
   desc: "div";
   desc2: "div";
@@ -917,7 +1339,6 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     navbar: makeNodeComponent("navbar"),
-    button2: makeNodeComponent("button2"),
     title: makeNodeComponent("title"),
     desc: makeNodeComponent("desc"),
     desc2: makeNodeComponent("desc2"),
