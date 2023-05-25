@@ -202,7 +202,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             sty.h2__qkxOl
                           )}
                         >
-                          {"Indonesia Digital Rupiah"}
+                          {"Indonesia \nDigital Rupiah"}
                         </h2>
                         <div
                           className={classNames(
@@ -212,7 +212,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           )}
                         >
                           {
-                            "Inovasi Mata Uang Digital Nusantara untuk menghubungkan dunia digital dengan Rupiah anda"
+                            "Inovasi Mata Uang Digital Nusantara untuk menghubungkan \ndunia digital dengan Rupiah anda"
                           }
                         </div>
                       </p.Stack>
@@ -348,7 +348,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             sty.h2__bswU
                           )}
                         >
-                          {"Tentang Indonesia Digital Rupiah"}
+                          {"Tentang Indonesia \nDigital Rupiah"}
                         </h2>
                         <div
                           className={classNames(
