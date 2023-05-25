@@ -142,6 +142,11 @@
           "id": "3wjTpps_Fo",
           "name": "CloseBoldSvgrepoComsvgIcon",
           "moduleFilePath": "plasmic/iddr/icons/PlasmicIcon__CloseBoldSvgrepoComsvg.tsx"
+        },
+        {
+          "id": "IYcwKk4Nul",
+          "name": "GoogleDocsSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/iddr/icons/PlasmicIcon__GoogleDocsSvgrepoComsvg.tsx"
         }
       ],
       "images": [

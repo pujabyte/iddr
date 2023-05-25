@@ -50,8 +50,9 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_iddr.module.css"; // plasmic-import: dJqK6LEBeKixAKagJBAmzL/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: S-EPZS57Iq32/css
 
-import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: WhOp2OsiY-D/icon
+import GoogleDocsSvgrepoComsvgIcon from "./icons/PlasmicIcon__GoogleDocsSvgrepoComsvg"; // plasmic-import: IYcwKk4Nul/icon
 import Icon38Icon from "./icons/PlasmicIcon__Icon38"; // plasmic-import: g3M_pomcN7I/icon
+import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: WhOp2OsiY-D/icon
 import CloseBoldSvgrepoComsvgIcon from "./icons/PlasmicIcon__CloseBoldSvgrepoComsvg"; // plasmic-import: 3wjTpps_Fo/icon
 
 export type PlasmicHomepage__VariantMembers = {};
@@ -235,6 +236,44 @@ function PlasmicHomepage__RenderFunc(props: {
                           sty.freeBox__vYncT
                         )}
                       >
+                        <Button2
+                          className={classNames(
+                            "__wab_instance",
+                            sty.button2__phul1
+                          )}
+                          endIcon={
+                            <Icon38Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__vM6PJ
+                              )}
+                              role={"img"}
+                            />
+                          }
+                          link={"/whitepaper-25-May-2023.pdf" as const}
+                          shape={"rounded" as const}
+                          showStartIcon={true}
+                          startIcon={
+                            <GoogleDocsSvgrepoComsvgIcon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__vxCiI
+                              )}
+                              role={"img"}
+                            />
+                          }
+                          submitsForm={false}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__wCz2E
+                            )}
+                          >
+                            {"Download our Whitepaper"}
+                          </div>
+                        </Button2>
                         <Button2
                           className={classNames(
                             "__wab_instance",
