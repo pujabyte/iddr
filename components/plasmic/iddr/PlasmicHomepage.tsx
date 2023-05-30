@@ -40,6 +40,7 @@ import { PlasmicHead } from "@plasmicapp/react-web"; // plasmic-import: T1KJa5bG
 import Navbar from "../../Navbar"; // plasmic-import: ThJz7UjPOLc/component
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal"; // plasmic-import: R6s1FdhksG/codeComponent
 import Button2 from "../../Button2"; // plasmic-import: R7FQakg198I/component
+import NetworkCard from "../../NetworkCard"; // plasmic-import: DybXCSmk6J/component
 import { Embed } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: PKldDYkH42/codeComponent
 import MenuOverlay from "../../MenuOverlay"; // plasmic-import: l7JCXcEFvGg/component
 
@@ -53,6 +54,13 @@ import sty from "./PlasmicHomepage.module.css"; // plasmic-import: S-EPZS57Iq32/
 import GoogleDocsSvgrepoComsvgIcon from "./icons/PlasmicIcon__GoogleDocsSvgrepoComsvg"; // plasmic-import: IYcwKk4Nul/icon
 import Icon38Icon from "./icons/PlasmicIcon__Icon38"; // plasmic-import: g3M_pomcN7I/icon
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: WhOp2OsiY-D/icon
+import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: ljio8ldcWK/icon
+import Icon8Icon from "./icons/PlasmicIcon__Icon8"; // plasmic-import: ZLscOeex6V/icon
+import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: iDs7aDQs7T/icon
+import Icon5Icon from "./icons/PlasmicIcon__Icon5"; // plasmic-import: fM-swEdfd/icon
+import CmcsvgIcon from "./icons/PlasmicIcon__Cmcsvg"; // plasmic-import: n_1Fj4QpLk/icon
+import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: V54Kju9r17/icon
+import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: lDkdlle9aD/icon
 import CloseBoldSvgrepoComsvgIcon from "./icons/PlasmicIcon__CloseBoldSvgrepoComsvg"; // plasmic-import: 3wjTpps_Fo/icon
 
 export type PlasmicHomepage__VariantMembers = {};
@@ -75,8 +83,10 @@ export type PlasmicHomepage__OverridesType = {
   desc4?: p.Flex<"div">;
   title2?: p.Flex<"div">;
   embedHtml?: p.Flex<typeof Embed>;
+  cmc?: p.Flex<"a"> & Partial<LinkProps>;
+  telegram?: p.Flex<"a"> & Partial<LinkProps>;
+  twitter?: p.Flex<"a"> & Partial<LinkProps>;
   menuOverlay?: p.Flex<typeof MenuOverlay>;
-  link?: p.Flex<"a"> & Partial<LinkProps>;
 };
 
 export interface DefaultHomepageProps {}
@@ -421,6 +431,313 @@ function PlasmicHomepage__RenderFunc(props: {
             </div>
           </div>
           <div
+            className={classNames(projectcss.all, sty.freeBox__aNv5A)}
+            id={"about" as const}
+          >
+            <div className={classNames(projectcss.all, sty.freeBox__c3I2J)}>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.columns__s3Jve)}
+              >
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.column__y58C)}
+                >
+                  <Reveal
+                    className={classNames("__wab_instance", sty.reveal__oeRkk)}
+                    direction={"right" as const}
+                    triggerOnce={true}
+                  >
+                    {true ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__hwh23
+                        )}
+                      >
+                        <h2
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h2,
+                            projectcss.__wab_text,
+                            sty.h2__uEgEx
+                          )}
+                        >
+                          {hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? "Smart Contract Indonesia \nDigital Rupiah "
+                            : "Smart Contract \nIndonesia Digital Rupiah "}
+                        </h2>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__bCvZ
+                          )}
+                        >
+                          {
+                            "Indonesia Digital Rupiah memberikan fleksibilitas dan ketersediaan melalui integrasi di berbagai platform blockchain terkemuka"
+                          }
+                        </div>
+                        {true ? (
+                          <p.Stack
+                            as={"div"}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__lZfc9
+                            )}
+                          >
+                            <NetworkCard
+                              className={classNames(
+                                "__wab_instance",
+                                sty.networkCard__n9Ai3
+                              )}
+                            >
+                              <p.Stack
+                                as={p.PlasmicLink}
+                                hasGap={true}
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.a,
+                                  sty.link__l6O5Q
+                                )}
+                                component={Link}
+                                href={
+                                  "https://etherscan.io/token/0x9a8284c2cec196478f01ef4446a0222dd4def00e" as const
+                                }
+                                platform={"nextjs"}
+                                target={"_blank" as const}
+                              >
+                                <Icon4Icon
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.svg__skzEw
+                                  )}
+                                  role={"img"}
+                                />
+
+                                <h5
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.h5,
+                                    projectcss.__wab_text,
+                                    sty.h5__aUu4S
+                                  )}
+                                >
+                                  {"Ethereum"}
+                                </h5>
+                                {true ? (
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.freeBox__k19Go
+                                    )}
+                                  >
+                                    <div
+                                      className={classNames(
+                                        projectcss.all,
+                                        projectcss.__wab_text,
+                                        sty.text___7SC4Q
+                                      )}
+                                    >
+                                      {
+                                        "https://etherscan.io/token/0x9a8284c2cec196478f01ef4446a0222dd4def00e"
+                                      }
+                                    </div>
+                                    <Icon8Icon
+                                      className={classNames(
+                                        projectcss.all,
+                                        sty.svg__br0Nq
+                                      )}
+                                      role={"img"}
+                                    />
+                                  </div>
+                                ) : null}
+                              </p.Stack>
+                            </NetworkCard>
+                            <NetworkCard
+                              className={classNames(
+                                "__wab_instance",
+                                sty.networkCard__sg0Br
+                              )}
+                            >
+                              <p.Stack
+                                as={p.PlasmicLink}
+                                hasGap={true}
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.a,
+                                  sty.link__bBe0P
+                                )}
+                                component={Link}
+                                href={
+                                  "https://www.bscscan.com/token/0x9a8284c2cec196478f01ef4446a0222dd4def00e" as const
+                                }
+                                platform={"nextjs"}
+                                target={"_blank" as const}
+                              >
+                                <Icon3Icon
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.svg__mZ6Km
+                                  )}
+                                  role={"img"}
+                                />
+
+                                <h5
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.h5,
+                                    projectcss.__wab_text,
+                                    sty.h5__oZmj0
+                                  )}
+                                >
+                                  {"BSC"}
+                                </h5>
+                                {true ? (
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.freeBox__ih0Sx
+                                    )}
+                                  >
+                                    <div
+                                      className={classNames(
+                                        projectcss.all,
+                                        projectcss.__wab_text,
+                                        sty.text___9Mr6
+                                      )}
+                                    >
+                                      {"https://bscscan.com/token/0x9a...f00e"}
+                                    </div>
+                                    <Icon8Icon
+                                      className={classNames(
+                                        projectcss.all,
+                                        sty.svg___4Uf8L
+                                      )}
+                                      role={"img"}
+                                    />
+                                  </div>
+                                ) : null}
+                              </p.Stack>
+                            </NetworkCard>
+                            <NetworkCard
+                              className={classNames(
+                                "__wab_instance",
+                                sty.networkCard__piGP
+                              )}
+                            >
+                              <p.Stack
+                                as={p.PlasmicLink}
+                                hasGap={true}
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.a,
+                                  sty.link__hikkj
+                                )}
+                                component={Link}
+                                href={
+                                  "https://polygonscan.com/token/0x9a8284c2cec196478f01ef4446a0222dd4def00e" as const
+                                }
+                                platform={"nextjs"}
+                                target={"_blank" as const}
+                              >
+                                <Icon5Icon
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.svg__ji7Nd
+                                  )}
+                                  role={"img"}
+                                />
+
+                                <h5
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.h5,
+                                    projectcss.__wab_text,
+                                    sty.h5__yeSt
+                                  )}
+                                >
+                                  {"Polygon"}
+                                </h5>
+                                {true ? (
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.freeBox__iVmVy
+                                    )}
+                                  >
+                                    <div
+                                      className={classNames(
+                                        projectcss.all,
+                                        projectcss.__wab_text,
+                                        sty.text__reNf9
+                                      )}
+                                    >
+                                      {
+                                        "https://polygonscan.com/token/0x9a...f00e"
+                                      }
+                                    </div>
+                                    <Icon8Icon
+                                      className={classNames(
+                                        projectcss.all,
+                                        sty.svg__e4Ja2
+                                      )}
+                                      role={"img"}
+                                    />
+                                  </div>
+                                ) : null}
+                              </p.Stack>
+                            </NetworkCard>
+                          </p.Stack>
+                        ) : null}
+                      </div>
+                    ) : null}
+                  </Reveal>
+                </p.Stack>
+                <div className={classNames(projectcss.all, sty.column__abTQl)}>
+                  {true ? (
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___9TUHz
+                      )}
+                    >
+                      <Reveal
+                        className={classNames(
+                          "__wab_instance",
+                          sty.reveal___1VFEj
+                        )}
+                        direction={"left" as const}
+                        triggerOnce={true}
+                      >
+                        <p.PlasmicImg
+                          alt={""}
+                          className={classNames(sty.img__syY7)}
+                          displayHeight={"auto" as const}
+                          displayMaxHeight={"none" as const}
+                          displayMaxWidth={"none" as const}
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={"100%" as const}
+                          loading={"lazy" as const}
+                          src={{
+                            src: "/plasmic/iddr/images/smartcontract3Png.png",
+                            fullWidth: 1024,
+                            fullHeight: 1024,
+                            aspectRatio: undefined
+                          }}
+                        />
+                      </Reveal>
+                    </div>
+                  ) : null}
+                </div>
+              </p.Stack>
+            </div>
+          </div>
+          <div
             className={classNames(projectcss.all, sty.freeBox__aO8ZD)}
             id={"team" as const}
           >
@@ -749,7 +1066,11 @@ function PlasmicHomepage__RenderFunc(props: {
               </p.Stack>
             </div>
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__tk5Ht)}>
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__tk5Ht)}
+          >
             <div className={classNames(projectcss.all, sty.freeBox__niorR)}>
               <div
                 className={classNames(
@@ -760,8 +1081,66 @@ function PlasmicHomepage__RenderFunc(props: {
               >
                 {"© 2023 by Indonesia Digital Rupiah"}
               </div>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__y0C9B)}
+              >
+                <p.PlasmicLink
+                  data-plasmic-name={"cmc"}
+                  data-plasmic-override={overrides.cmc}
+                  className={classNames(projectcss.all, projectcss.a, sty.cmc)}
+                  component={Link}
+                  href={
+                    "https://coinmarketcap.com/currencies/idr-digital/" as const
+                  }
+                  platform={"nextjs"}
+                  target={"_blank" as const}
+                >
+                  <CmcsvgIcon
+                    className={classNames(projectcss.all, sty.svg__bBfyP)}
+                    role={"img"}
+                  />
+                </p.PlasmicLink>
+                <p.PlasmicLink
+                  data-plasmic-name={"telegram"}
+                  data-plasmic-override={overrides.telegram}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.telegram
+                  )}
+                  component={Link}
+                  href={"https://t.me/iddr_io" as const}
+                  platform={"nextjs"}
+                  target={"_blank" as const}
+                >
+                  <IconIcon
+                    className={classNames(projectcss.all, sty.svg__asEhz)}
+                    role={"img"}
+                  />
+                </p.PlasmicLink>
+                <p.PlasmicLink
+                  data-plasmic-name={"twitter"}
+                  data-plasmic-override={overrides.twitter}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.twitter
+                  )}
+                  component={Link}
+                  href={"https://twitter.com/iddr_io" as const}
+                  platform={"nextjs"}
+                  target={"_blank" as const}
+                >
+                  <Icon2Icon
+                    className={classNames(projectcss.all, sty.svg__bkLqu)}
+                    role={"img"}
+                  />
+                </p.PlasmicLink>
+              </p.Stack>
             </div>
-          </div>
+          </p.Stack>
           {(
             hasVariant(globalVariants, "screen", "mobileOnly")
               ? (() => {
@@ -1203,9 +1582,11 @@ function PlasmicHomepage__RenderFunc(props: {
               }
             >
               <p.PlasmicLink
-                data-plasmic-name={"link"}
-                data-plasmic-override={overrides.link}
-                className={classNames(projectcss.all, projectcss.a, sty.link)}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__a9M7
+                )}
                 component={Link}
                 onClick={async event => {
                   const $steps = {};
@@ -1300,8 +1681,10 @@ const PlasmicDescendants = {
     "desc4",
     "title2",
     "embedHtml",
-    "menuOverlay",
-    "link"
+    "cmc",
+    "telegram",
+    "twitter",
+    "menuOverlay"
   ],
   pageMetadataOverride: ["pageMetadataOverride"],
   navbar: ["navbar"],
@@ -1312,8 +1695,10 @@ const PlasmicDescendants = {
   desc4: ["desc4"],
   title2: ["title2"],
   embedHtml: ["embedHtml"],
-  menuOverlay: ["menuOverlay", "link"],
-  link: ["link"]
+  cmc: ["cmc"],
+  telegram: ["telegram"],
+  twitter: ["twitter"],
+  menuOverlay: ["menuOverlay"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -1329,8 +1714,10 @@ type NodeDefaultElementType = {
   desc4: "div";
   title2: "div";
   embedHtml: typeof Embed;
+  cmc: "a";
+  telegram: "a";
+  twitter: "a";
   menuOverlay: typeof MenuOverlay;
-  link: "a";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -1402,8 +1789,10 @@ export const PlasmicHomepage = Object.assign(
     desc4: makeNodeComponent("desc4"),
     title2: makeNodeComponent("title2"),
     embedHtml: makeNodeComponent("embedHtml"),
+    cmc: makeNodeComponent("cmc"),
+    telegram: makeNodeComponent("telegram"),
+    twitter: makeNodeComponent("twitter"),
     menuOverlay: makeNodeComponent("menuOverlay"),
-    link: makeNodeComponent("link"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

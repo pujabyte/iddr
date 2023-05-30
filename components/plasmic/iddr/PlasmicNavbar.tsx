@@ -36,7 +36,6 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import Button2 from "../../Button2"; // plasmic-import: R7FQakg198I/component
 
 import { useScreenVariants as useScreenVariantsvWlfn14Jm89In } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: vWLFN14Jm89IN/globalVariant
 
@@ -45,10 +44,11 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_iddr.module.css"; // plasmic-import: dJqK6LEBeKixAKagJBAmzL/projectcss
 import sty from "./PlasmicNavbar.module.css"; // plasmic-import: ThJz7UjPOLc/css
 
-import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: WhOp2OsiY-D/icon
-import Icon38Icon from "./icons/PlasmicIcon__Icon38"; // plasmic-import: g3M_pomcN7I/icon
 import MenuSvgrepoComsvgIcon from "./icons/PlasmicIcon__MenuSvgrepoComsvg"; // plasmic-import: XTdEHy648t/icon
 import CloseBoldSvgrepoComsvgIcon from "./icons/PlasmicIcon__CloseBoldSvgrepoComsvg"; // plasmic-import: 3wjTpps_Fo/icon
+import CmcsvgIcon from "./icons/PlasmicIcon__Cmcsvg"; // plasmic-import: n_1Fj4QpLk/icon
+import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: V54Kju9r17/icon
+import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: lDkdlle9aD/icon
 
 export type PlasmicNavbar__VariantMembers = {};
 export type PlasmicNavbar__VariantsArgs = {};
@@ -68,6 +68,14 @@ export const PlasmicNavbar__ArgProps = new Array<ArgPropType>(
 export type PlasmicNavbar__OverridesType = {
   navbar?: p.Flex<"div">;
   img?: p.Flex<typeof p.PlasmicImg>;
+  menus?: p.Flex<"div">;
+  mnItem?: p.Flex<"a"> & Partial<LinkProps>;
+  mnItem2?: p.Flex<"a"> & Partial<LinkProps>;
+  mnItem3?: p.Flex<"a"> & Partial<LinkProps>;
+  mnItem4?: p.Flex<"a"> & Partial<LinkProps>;
+  cmc?: p.Flex<"a"> & Partial<LinkProps>;
+  telegram?: p.Flex<"a"> & Partial<LinkProps>;
+  twitter?: p.Flex<"a"> & Partial<LinkProps>;
 };
 
 export interface DefaultNavbarProps {
@@ -176,121 +184,83 @@ function PlasmicNavbar__RenderFunc(props: {
         {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
           <p.Stack
             as={"div"}
+            data-plasmic-name={"menus"}
+            data-plasmic-override={overrides.menus}
             hasGap={true}
-            className={classNames(projectcss.all, sty.freeBox__loRq6)}
+            className={classNames(projectcss.all, sty.menus)}
           >
-            <Button2
-              className={classNames("__wab_instance", sty.button2__tv0AO)}
-              color={"clear" as const}
-              endIcon={
-                <Icon38Icon
-                  className={classNames(projectcss.all, sty.svg__lvIl)}
-                  role={"img"}
-                />
-              }
-              link={"#home" as const}
-              startIcon={
-                <ChecksvgIcon
-                  className={classNames(projectcss.all, sty.svg__nLjGo)}
-                  role={"img"}
-                />
-              }
-              submitsForm={true}
+            <p.PlasmicLink
+              data-plasmic-name={"mnItem"}
+              data-plasmic-override={overrides.mnItem}
+              className={classNames(projectcss.all, projectcss.a, sty.mnItem)}
+              component={Link}
+              href={"#home" as const}
+              platform={"nextjs"}
             >
               <div
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__xoUg
+                  sty.text__doFl
                 )}
               >
                 {"Beranda"}
               </div>
-            </Button2>
-            <Button2
-              className={classNames("__wab_instance", sty.button2__ftYfy)}
-              color={"clear" as const}
-              endIcon={
-                <Icon38Icon
-                  className={classNames(projectcss.all, sty.svg___4UxP0)}
-                  role={"img"}
-                />
-              }
-              link={"#about" as const}
-              startIcon={
-                <ChecksvgIcon
-                  className={classNames(projectcss.all, sty.svg__xfMrD)}
-                  role={"img"}
-                />
-              }
-              submitsForm={true}
+            </p.PlasmicLink>
+            <p.PlasmicLink
+              data-plasmic-name={"mnItem2"}
+              data-plasmic-override={overrides.mnItem2}
+              className={classNames(projectcss.all, projectcss.a, sty.mnItem2)}
+              component={Link}
+              href={"#about" as const}
+              platform={"nextjs"}
             >
               <div
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__jYoH9
+                  sty.text__diLvd
                 )}
               >
                 {"Tentang"}
               </div>
-            </Button2>
-            <Button2
-              className={classNames("__wab_instance", sty.button2__y1Coc)}
-              color={"clear" as const}
-              endIcon={
-                <Icon38Icon
-                  className={classNames(projectcss.all, sty.svg__sw0DB)}
-                  role={"img"}
-                />
-              }
-              link={"#team" as const}
-              startIcon={
-                <ChecksvgIcon
-                  className={classNames(projectcss.all, sty.svg__tlCCc)}
-                  role={"img"}
-                />
-              }
-              submitsForm={true}
+            </p.PlasmicLink>
+            <p.PlasmicLink
+              data-plasmic-name={"mnItem3"}
+              data-plasmic-override={overrides.mnItem3}
+              className={classNames(projectcss.all, projectcss.a, sty.mnItem3)}
+              component={Link}
+              href={"#team" as const}
+              platform={"nextjs"}
             >
               <div
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__cEfr
+                  sty.text__j8Gj
                 )}
               >
                 {"Tim"}
               </div>
-            </Button2>
-            <Button2
-              className={classNames("__wab_instance", sty.button2__wBug2)}
-              color={"clear" as const}
-              endIcon={
-                <Icon38Icon
-                  className={classNames(projectcss.all, sty.svg__gYYm)}
-                  role={"img"}
-                />
-              }
-              link={"#contact" as const}
-              startIcon={
-                <ChecksvgIcon
-                  className={classNames(projectcss.all, sty.svg___6Crw3)}
-                  role={"img"}
-                />
-              }
-              submitsForm={true}
+            </p.PlasmicLink>
+            <p.PlasmicLink
+              data-plasmic-name={"mnItem4"}
+              data-plasmic-override={overrides.mnItem4}
+              className={classNames(projectcss.all, projectcss.a, sty.mnItem4)}
+              component={Link}
+              href={"#contact" as const}
+              platform={"nextjs"}
             >
               <div
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__u9Uja
+                  sty.text__iudxA
                 )}
               >
                 {"Kontak"}
               </div>
-            </Button2>
+            </p.PlasmicLink>
           </p.Stack>
         ) : null}
         {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
@@ -395,14 +365,85 @@ function PlasmicNavbar__RenderFunc(props: {
             />
           </p.PlasmicLink>
         ) : null}
+        {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__rxuxc)}
+          >
+            <p.PlasmicLink
+              data-plasmic-name={"cmc"}
+              data-plasmic-override={overrides.cmc}
+              className={classNames(projectcss.all, projectcss.a, sty.cmc)}
+              component={Link}
+              href={
+                "https://coinmarketcap.com/currencies/idr-digital/" as const
+              }
+              platform={"nextjs"}
+              target={"_blank" as const}
+            >
+              <CmcsvgIcon
+                className={classNames(projectcss.all, sty.svg__j8Hg9)}
+                role={"img"}
+              />
+            </p.PlasmicLink>
+            <p.PlasmicLink
+              data-plasmic-name={"telegram"}
+              data-plasmic-override={overrides.telegram}
+              className={classNames(projectcss.all, projectcss.a, sty.telegram)}
+              component={Link}
+              href={"https://t.me/iddr_io" as const}
+              platform={"nextjs"}
+              target={"_blank" as const}
+            >
+              <IconIcon
+                className={classNames(projectcss.all, sty.svg___4U4SS)}
+                role={"img"}
+              />
+            </p.PlasmicLink>
+            <p.PlasmicLink
+              data-plasmic-name={"twitter"}
+              data-plasmic-override={overrides.twitter}
+              className={classNames(projectcss.all, projectcss.a, sty.twitter)}
+              component={Link}
+              href={"https://twitter.com/iddr_io" as const}
+              platform={"nextjs"}
+              target={"_blank" as const}
+            >
+              <Icon2Icon
+                className={classNames(projectcss.all, sty.svg___5Sopt)}
+                role={"img"}
+              />
+            </p.PlasmicLink>
+          </p.Stack>
+        ) : null}
       </div>
     </div>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  navbar: ["navbar", "img"],
-  img: ["img"]
+  navbar: [
+    "navbar",
+    "img",
+    "menus",
+    "mnItem",
+    "mnItem2",
+    "mnItem3",
+    "mnItem4",
+    "cmc",
+    "telegram",
+    "twitter"
+  ],
+  img: ["img"],
+  menus: ["menus", "mnItem", "mnItem2", "mnItem3", "mnItem4"],
+  mnItem: ["mnItem"],
+  mnItem2: ["mnItem2"],
+  mnItem3: ["mnItem3"],
+  mnItem4: ["mnItem4"],
+  cmc: ["cmc"],
+  telegram: ["telegram"],
+  twitter: ["twitter"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -410,6 +451,14 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   navbar: "div";
   img: typeof p.PlasmicImg;
+  menus: "div";
+  mnItem: "a";
+  mnItem2: "a";
+  mnItem3: "a";
+  mnItem4: "a";
+  cmc: "a";
+  telegram: "a";
+  twitter: "a";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -473,6 +522,14 @@ export const PlasmicNavbar = Object.assign(
   {
     // Helper components rendering sub-elements
     img: makeNodeComponent("img"),
+    menus: makeNodeComponent("menus"),
+    mnItem: makeNodeComponent("mnItem"),
+    mnItem2: makeNodeComponent("mnItem2"),
+    mnItem3: makeNodeComponent("mnItem3"),
+    mnItem4: makeNodeComponent("mnItem4"),
+    cmc: makeNodeComponent("cmc"),
+    telegram: makeNodeComponent("telegram"),
+    twitter: makeNodeComponent("twitter"),
 
     // Metadata about props expected for PlasmicNavbar
     internalVariantProps: PlasmicNavbar__VariantProps,

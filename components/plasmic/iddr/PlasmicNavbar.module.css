@@ -47,36 +47,32 @@
 .img > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
-.freeBox__loRq6 {
+.menus {
   display: flex;
   position: relative;
   flex-direction: row;
   width: auto;
 }
-.freeBox__loRq6 > :global(.__wab_flex-container) {
+.menus > :global(.__wab_flex-container) {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-left: calc(0px - 8px);
-  width: calc(100% + 8px);
+  margin-left: calc(0px - 24px);
+  width: calc(100% + 24px);
 }
-.freeBox__loRq6 > :global(.__wab_flex-container) > *,
-.freeBox__loRq6 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.freeBox__loRq6 > :global(.__wab_flex-container) > picture > img,
-.freeBox__loRq6
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-left: 8px;
+.menus > :global(.__wab_flex-container) > *,
+.menus > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.menus > :global(.__wab_flex-container) > picture > img,
+.menus > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-left: 24px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .freeBox__loRq6 {
+  .menus {
     display: none;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .freeBox__loRq6 > :global(.__wab_flex-container) {
+  .menus > :global(.__wab_flex-container) {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: calc(0px - 8px);
@@ -84,10 +80,10 @@
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .freeBox__loRq6 > :global(.__wab_flex-container) > *,
-  .freeBox__loRq6 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-  .freeBox__loRq6 > :global(.__wab_flex-container) > picture > img,
-  .freeBox__loRq6
+  .menus > :global(.__wab_flex-container) > *,
+  .menus > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+  .menus > :global(.__wab_flex-container) > picture > img,
+  .menus
     > :global(.__wab_flex-container)
     > :global(.__wab_slot)
     > picture
@@ -95,133 +91,56 @@
     margin-top: 8px;
   }
 }
-.button2__tv0AO:global(.__wab_instance) {
-  max-width: 100%;
+.mnItem {
   position: relative;
-  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
 }
-.svg__nLjGo {
+.text__doFl {
   position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
 }
-.text__xoUg {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  font-style: normal;
-  color: #090e24;
-  text-align: left;
-  text-transform: none;
-  line-height: 1.5;
-  letter-spacing: normal;
-  white-space: pre;
-  user-select: text;
-  text-decoration-line: none !important;
-  text-overflow: clip !important;
-}
-.svg__lvIl {
+.mnItem2 {
   position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
+  display: flex;
+  flex-direction: row;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
 }
-.button2__ftYfy:global(.__wab_instance) {
-  max-width: 100%;
+.text__diLvd {
   position: relative;
-  align-self: flex-start;
+  padding-bottom: 0px;
 }
-.svg__xfMrD {
+.mnItem3 {
   position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
+  display: flex;
+  flex-direction: row;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
 }
-.text__jYoH9 {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  font-style: normal;
-  color: #090e24;
-  text-align: left;
-  text-transform: none;
-  line-height: 1.5;
-  letter-spacing: normal;
-  white-space: pre;
-  user-select: text;
-  text-decoration-line: none !important;
-  text-overflow: clip !important;
-}
-.svg___4UxP0 {
+.text__j8Gj {
   position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
+  padding-bottom: 0px;
 }
-.button2__y1Coc:global(.__wab_instance) {
-  max-width: 100%;
+.mnItem4 {
   position: relative;
-  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
 }
-.svg__tlCCc {
+.text__iudxA {
   position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
-}
-.text__cEfr {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  font-style: normal;
-  color: #090e24;
-  text-align: left;
-  text-transform: none;
-  line-height: 1.5;
-  letter-spacing: normal;
-  white-space: pre;
-  user-select: text;
-  text-decoration-line: none !important;
-  text-overflow: clip !important;
-}
-.svg__sw0DB {
-  position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
-}
-.button2__wBug2:global(.__wab_instance) {
-  max-width: 100%;
-  position: relative;
-  align-self: flex-start;
-}
-.svg___6Crw3 {
-  position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
-}
-.text__u9Uja {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  font-style: normal;
-  color: #090e24;
-  text-align: left;
-  text-transform: none;
-  line-height: 1.5;
-  letter-spacing: normal;
-  white-space: pre;
-  user-select: text;
-  text-decoration-line: none !important;
-  text-overflow: clip !important;
-}
-.svg__gYYm {
-  position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
+  padding-bottom: 0px;
 }
 .link__dInIj {
   position: relative;
@@ -262,6 +181,72 @@
 .svg__al8He {
   object-fit: cover;
   max-width: 100%;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.freeBox__rxuxc {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+.freeBox__rxuxc > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-left: calc(0px - 16px);
+  width: calc(100% + 16px);
+}
+.freeBox__rxuxc > :global(.__wab_flex-container) > *,
+.freeBox__rxuxc > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__rxuxc > :global(.__wab_flex-container) > picture > img,
+.freeBox__rxuxc
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 16px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox__rxuxc {
+    display: none;
+  }
+}
+.cmc {
+  position: relative;
+  display: flex;
+}
+.svg__j8Hg9 {
+  object-fit: cover;
+  max-width: 100%;
+  color: #000000;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.telegram {
+  position: relative;
+  display: flex;
+}
+.svg___4U4SS {
+  object-fit: cover;
+  max-width: 100%;
+  color: #000000;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.twitter {
+  position: relative;
+  display: flex;
+}
+.svg___5Sopt {
+  object-fit: cover;
+  max-width: 100%;
+  color: #000000;
   width: 24px;
   height: 24px;
   flex-shrink: 0;
