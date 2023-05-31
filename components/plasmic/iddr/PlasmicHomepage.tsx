@@ -432,7 +432,7 @@ function PlasmicHomepage__RenderFunc(props: {
           </div>
           <div
             className={classNames(projectcss.all, sty.freeBox__aNv5A)}
-            id={"about" as const}
+            id={"contract" as const}
           >
             <div className={classNames(projectcss.all, sty.freeBox__c3I2J)}>
               <p.Stack

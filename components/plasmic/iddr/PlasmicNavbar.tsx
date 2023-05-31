@@ -195,6 +195,9 @@ function PlasmicNavbar__RenderFunc(props: {
               className={classNames(projectcss.all, projectcss.a, sty.mnItem)}
               component={Link}
               href={"#home" as const}
+              onClick={async event => {
+                const $steps = {};
+              }}
               platform={"nextjs"}
             >
               <div
@@ -213,6 +216,9 @@ function PlasmicNavbar__RenderFunc(props: {
               className={classNames(projectcss.all, projectcss.a, sty.mnItem2)}
               component={Link}
               href={"#about" as const}
+              onClick={async event => {
+                const $steps = {};
+              }}
               platform={"nextjs"}
             >
               <div
@@ -231,6 +237,9 @@ function PlasmicNavbar__RenderFunc(props: {
               className={classNames(projectcss.all, projectcss.a, sty.mnItem3)}
               component={Link}
               href={"#team" as const}
+              onClick={async event => {
+                const $steps = {};
+              }}
               platform={"nextjs"}
             >
               <div
@@ -249,6 +258,9 @@ function PlasmicNavbar__RenderFunc(props: {
               className={classNames(projectcss.all, projectcss.a, sty.mnItem4)}
               component={Link}
               href={"#contact" as const}
+              onClick={async event => {
+                const $steps = {};
+              }}
               platform={"nextjs"}
             >
               <div
