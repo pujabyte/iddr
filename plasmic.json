@@ -69,7 +69,8 @@
           "displayName": "hostless-side-effect",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "dJqK6LEBeKixAKagJBAmzL",
@@ -438,7 +439,8 @@
             "importPath": "@plasmicpkgs/plasmic-rich-components"
           }
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "ohDidvG9XsCeFumugENU3J",
@@ -792,7 +794,8 @@
           "displayName": "plasmic-antd5-slider-mark",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerSlider"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {

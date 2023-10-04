@@ -1021,7 +1021,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.h2__n0USz
                     )}
                   >
-                    {"Laporan Bulanan Bank"}
+                    {"Laporan Atestasi Bulanan"}
                   </h2>
                   <h6
                     className={classNames(

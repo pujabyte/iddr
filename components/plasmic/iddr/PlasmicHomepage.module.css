@@ -1557,6 +1557,7 @@
   color: #626e99;
   font-weight: 500;
   min-width: 0;
+  display: none;
 }
 .dataProvider:global(.__wab_instance) {
   max-width: 100%;

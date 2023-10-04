@@ -271,7 +271,7 @@ function PlasmicNavbar__RenderFunc(props: {
                 sty.text__ivO7D
               )}
             >
-              {"Laporan Bank"}
+              {"Laporan"}
             </div>
           </p.PlasmicLink>
           <p.PlasmicLink
