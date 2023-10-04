@@ -1042,39 +1042,11 @@ function PlasmicHomepage__RenderFunc(props: {
                 data={[
                   {
                     id: 1,
-                    desc: "Indonesia Digital Rupiah Bank Report - Jan 2023",
-                    date: "Last Updated, 1 January 2023",
-                    url: ["https://www.fillmurray.com/200/300"]
-                  },
-                  {
-                    id: 2,
-                    desc: "Indonesia Digital Rupiah Bank Report - Feb 2023",
-                    date: "Last Updated, 1 February 2023",
-                    url: ["https://www.fillmurray.com/200/300"]
-                  },
-                  {
-                    id: 3,
-                    desc: "Indonesia Digital Rupiah Bank Report - Mar 2023",
-                    date: "Last Updated, 1 March 2023",
-                    url: ["https://www.fillmurray.com/200/300"]
-                  },
-                  {
-                    id: "1",
-                    desc: "Indonesia Digital Rupiah Bank Report - Apr 2023",
-                    date: "Last Updated, 1 April 2023",
-                    url: ["https://www.fillmurray.com/200/300"]
-                  },
-                  {
-                    id: "1",
-                    desc: "Indonesia Digital Rupiah Bank Report - May 2023",
-                    date: "Last Updated, 1 May 2023",
-                    url: ["https://www.fillmurray.com/200/300"]
-                  },
-                  {
-                    id: "2",
-                    desc: "Indonesia Digital Rupiah Bank Report - Jun 2023",
-                    date: "Last Updated, 1 June 2023",
-                    url: ["https://www.placecage.com/200/300"]
+                    desc: "Indonesia Digital Rupiah Collateral Report - 30 Sept 2023",
+                    date: "Last Updated, 30 sept 2023",
+                    url: [
+                      "https://www.iddr.io/IDDR-Collateral-Report-30-Sept-2023.pdf"
+                    ]
                   }
                 ]}
                 name={"bankReport"}
