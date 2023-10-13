@@ -92,6 +92,8 @@ export interface DefaultMenuOverlayProps {
   className?: string;
 }
 
+const $$ = {};
+
 function useNextRouter() {
   try {
     return useRouter();
@@ -153,6 +155,7 @@ function PlasmicMenuOverlay__RenderFunc(props: {
               component={Link}
               onClick={async event => {
                 const $steps = {};
+
                 $steps["updateStateVariable"] = true
                   ? (() => {
                       const actionArgs = {};
@@ -237,6 +240,7 @@ function PlasmicMenuOverlay__RenderFunc(props: {
                 link={"#home"}
                 onClick={async event => {
                   const $steps = {};
+
                   $steps["updateStateVariable"] = true
                     ? (() => {
                         const actionArgs = {};
@@ -405,6 +409,7 @@ function PlasmicMenuOverlay__RenderFunc(props: {
                     component={Link}
                     onClick={async event => {
                       const $steps = {};
+
                       $steps["updateStateVariable"] = true
                         ? (() => {
                             const actionArgs = {};

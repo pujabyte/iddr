@@ -149,6 +149,8 @@ export interface DefaultButton2Props extends pp.BaseButtonProps {
   >;
 }
 
+const $$ = {};
+
 function useNextRouter() {
   try {
     return useRouter();

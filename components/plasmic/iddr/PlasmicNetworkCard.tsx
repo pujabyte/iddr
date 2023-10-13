@@ -68,6 +68,8 @@ export interface DefaultNetworkCardProps {
   className?: string;
 }
 
+const $$ = {};
+
 function useNextRouter() {
   try {
     return useRouter();

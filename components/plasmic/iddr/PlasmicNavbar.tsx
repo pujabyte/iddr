@@ -77,6 +77,7 @@ export type PlasmicNavbar__OverridesType = {
   mnItem3?: p.Flex<"a"> & Partial<LinkProps>;
   mnItem5?: p.Flex<"a"> & Partial<LinkProps>;
   mnItem4?: p.Flex<"a"> & Partial<LinkProps>;
+  mnItem6?: p.Flex<"a"> & Partial<LinkProps>;
   cmc?: p.Flex<"a"> & Partial<LinkProps>;
   telegram?: p.Flex<"a"> & Partial<LinkProps>;
   twitter?: p.Flex<"a"> & Partial<LinkProps>;
@@ -87,6 +88,8 @@ export interface DefaultNavbarProps {
   onIsMenuOpenChange?: (val: boolean) => void;
   className?: string;
 }
+
+const $$ = {};
 
 function useNextRouter() {
   try {
@@ -295,12 +298,35 @@ function PlasmicNavbar__RenderFunc(props: {
               {"Kontak"}
             </div>
           </p.PlasmicLink>
+          <p.PlasmicLink
+            data-plasmic-name={"mnItem6"}
+            data-plasmic-override={overrides.mnItem6}
+            className={classNames(projectcss.all, projectcss.a, sty.mnItem6)}
+            component={Link}
+            href={"https://staking.iddr.io/"}
+            onClick={async event => {
+              const $steps = {};
+            }}
+            platform={"nextjs"}
+            target={"_blank"}
+          >
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__zaB2B
+              )}
+            >
+              {"Staking"}
+            </div>
+          </p.PlasmicLink>
         </p.Stack>
         <p.PlasmicLink
           className={classNames(projectcss.all, projectcss.a, sty.link__dInIj)}
           component={Link}
           onClick={async event => {
             const $steps = {};
+
             $steps["updateIsMenuOpen"] = true
               ? (() => {
                   const actionArgs = {
@@ -409,17 +435,27 @@ const PlasmicDescendants = {
     "mnItem3",
     "mnItem5",
     "mnItem4",
+    "mnItem6",
     "cmc",
     "telegram",
     "twitter"
   ],
   img: ["img"],
-  menus: ["menus", "mnItem", "mnItem2", "mnItem3", "mnItem5", "mnItem4"],
+  menus: [
+    "menus",
+    "mnItem",
+    "mnItem2",
+    "mnItem3",
+    "mnItem5",
+    "mnItem4",
+    "mnItem6"
+  ],
   mnItem: ["mnItem"],
   mnItem2: ["mnItem2"],
   mnItem3: ["mnItem3"],
   mnItem5: ["mnItem5"],
   mnItem4: ["mnItem4"],
+  mnItem6: ["mnItem6"],
   cmc: ["cmc"],
   telegram: ["telegram"],
   twitter: ["twitter"]
@@ -436,6 +472,7 @@ type NodeDefaultElementType = {
   mnItem3: "a";
   mnItem5: "a";
   mnItem4: "a";
+  mnItem6: "a";
   cmc: "a";
   telegram: "a";
   twitter: "a";
@@ -508,6 +545,7 @@ export const PlasmicNavbar = Object.assign(
     mnItem3: makeNodeComponent("mnItem3"),
     mnItem5: makeNodeComponent("mnItem5"),
     mnItem4: makeNodeComponent("mnItem4"),
+    mnItem6: makeNodeComponent("mnItem6"),
     cmc: makeNodeComponent("cmc"),
     telegram: makeNodeComponent("telegram"),
     twitter: makeNodeComponent("twitter"),

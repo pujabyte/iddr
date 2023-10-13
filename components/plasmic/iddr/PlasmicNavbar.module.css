@@ -155,6 +155,19 @@
   position: relative;
   padding-bottom: 0px;
 }
+.mnItem6 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+}
+.text__zaB2B {
+  position: relative;
+  padding-bottom: 0px;
+}
 .link__dInIj {
   position: relative;
   color: #000000;

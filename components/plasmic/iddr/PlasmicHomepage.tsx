@@ -100,6 +100,8 @@ export type PlasmicHomepage__OverridesType = {
 
 export interface DefaultHomepageProps {}
 
+const $$ = {};
+
 function useNextRouter() {
   try {
     return useRouter();
@@ -1332,6 +1334,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   link={"#home"}
                   onClick={async event => {
                     const $steps = {};
+
                     $steps["updateNavbarIsMenuOpen"] = true
                       ? (() => {
                           const actionArgs = {
@@ -1400,6 +1403,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   link={"#about"}
                   onClick={async event => {
                     const $steps = {};
+
                     $steps["updateNavbarIsMenuOpen"] = true
                       ? (() => {
                           const actionArgs = {
@@ -1468,6 +1472,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   link={"#team"}
                   onClick={async event => {
                     const $steps = {};
+
                     $steps["updateNavbarIsMenuOpen"] = true
                       ? (() => {
                           const actionArgs = {
@@ -1536,6 +1541,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   link={"#contact"}
                   onClick={async event => {
                     const $steps = {};
+
                     $steps["updateNavbarIsMenuOpen"] = true
                       ? (() => {
                           const actionArgs = {
@@ -1601,6 +1607,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 component={Link}
                 onClick={async event => {
                   const $steps = {};
+
                   $steps["updateNavbarIsMenuOpen"] = true
                     ? (() => {
                         const actionArgs = {
