@@ -85,7 +85,8 @@
   background: #fff0ee;
 }
 .rootcolor_softSand {
-  background: #eeeeec;
+  background: none;
+  border: 1px solid var(--token-LqpCVPPZF4_r);
 }
 .rootcolor_clear {
   background: #ffffff00;

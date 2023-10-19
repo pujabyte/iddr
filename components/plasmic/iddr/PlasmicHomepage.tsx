@@ -254,9 +254,104 @@ function PlasmicHomepage__RenderFunc(props: {
                         hasGap={true}
                         className={classNames(
                           projectcss.all,
+                          sty.freeBox__rjtnI
+                        )}
+                      >
+                        <Button2
+                          className={classNames(
+                            "__wab_instance",
+                            sty.button2__gY4Sy
+                          )}
+                          color={"softSand"}
+                          endIcon={
+                            <Icon38Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__qpXTl
+                              )}
+                              role={"img"}
+                            />
+                          }
+                          link={"/whitepaper-25-May-2023.pdf"}
+                          shape={"rounded"}
+                          showStartIcon={true}
+                          startIcon={
+                            <GoogleDocsSvgrepoComsvgIcon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__ofam2
+                              )}
+                              role={"img"}
+                            />
+                          }
+                          submitsForm={false}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__ml9TZ
+                            )}
+                          >
+                            {"Download our Whitepaper"}
+                          </div>
+                        </Button2>
+                        <Button2
+                          className={classNames(
+                            "__wab_instance",
+                            sty.button2__y8Hei
+                          )}
+                          color={"softSand"}
+                          endIcon={
+                            <Icon38Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__l8DC7
+                              )}
+                              role={"img"}
+                            />
+                          }
+                          link={"#about"}
+                          shape={"rounded"}
+                          startIcon={
+                            <ChecksvgIcon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__iDajW
+                              )}
+                              role={"img"}
+                            />
+                          }
+                          submitsForm={true}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__h8KHd
+                            )}
+                          >
+                            {"Pelajari Selengkapnya ->"}
+                          </div>
+                        </Button2>
+                      </p.Stack>
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
                           sty.freeBox__vYncT
                         )}
                       >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__pDgFp
+                          )}
+                        >
+                          {"Belum memiliki IDDR token?"}
+                        </div>
                         <Button2
                           className={classNames(
                             "__wab_instance",
@@ -271,9 +366,8 @@ function PlasmicHomepage__RenderFunc(props: {
                               role={"img"}
                             />
                           }
-                          link={"/whitepaper-25-May-2023.pdf"}
+                          link={"https://www.nanovest.io/en/"}
                           shape={"rounded"}
-                          showStartIcon={true}
                           startIcon={
                             <GoogleDocsSvgrepoComsvgIcon
                               className={classNames(
@@ -292,44 +386,7 @@ function PlasmicHomepage__RenderFunc(props: {
                               sty.text__wCz2E
                             )}
                           >
-                            {"Download our Whitepaper"}
-                          </div>
-                        </Button2>
-                        <Button2
-                          className={classNames(
-                            "__wab_instance",
-                            sty.button2__ehw0L
-                          )}
-                          endIcon={
-                            <Icon38Icon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__iOif8
-                              )}
-                              role={"img"}
-                            />
-                          }
-                          link={"#about"}
-                          shape={"rounded"}
-                          startIcon={
-                            <ChecksvgIcon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__nqjhb
-                              )}
-                              role={"img"}
-                            />
-                          }
-                          submitsForm={true}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text___77PAx
-                            )}
-                          >
-                            {"Pelajari Selengkapnya ->"}
+                            {"Get IDDR"}
                           </div>
                         </Button2>
                       </p.Stack>
@@ -1106,6 +1163,86 @@ function PlasmicHomepage__RenderFunc(props: {
                   )}
                 </ph.DataCtxReader>
               </DataProvider>
+            </div>
+          </div>
+          <div
+            className={classNames(projectcss.all, sty.freeBox__ypBp)}
+            id={"bank"}
+          >
+            <div className={classNames(projectcss.all, sty.freeBox__daeAs)}>
+              <Reveal
+                className={classNames("__wab_instance", sty.reveal__dCfPw)}
+                direction={"up"}
+                triggerOnce={true}
+              >
+                <div className={classNames(projectcss.all, sty.freeBox__fwQon)}>
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__dvduG)}
+                  >
+                    <h2
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h2,
+                        projectcss.__wab_text,
+                        sty.h2__uaGlo
+                      )}
+                    >
+                      {"Dapatkan IDDR secara eksklusif melalui Nanovest"}
+                    </h2>
+                    <Button2
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button2__jtbhl
+                      )}
+                      endIcon={
+                        <Icon38Icon
+                          className={classNames(projectcss.all, sty.svg__mbeB7)}
+                          role={"img"}
+                        />
+                      }
+                      link={"https://www.nanovest.io"}
+                      shape={"rounded"}
+                      startIcon={
+                        <GoogleDocsSvgrepoComsvgIcon
+                          className={classNames(projectcss.all, sty.svg__zu1Wu)}
+                          role={"img"}
+                        />
+                      }
+                      submitsForm={false}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___9BAT
+                        )}
+                      >
+                        {"Get IDDR"}
+                      </div>
+                    </Button2>
+                  </p.Stack>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__dajRv)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__fNRhz)}
+                    />
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__nc7Ru)}
+                    />
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___7DgB8
+                      )}
+                    />
+                  </div>
+                </div>
+              </Reveal>
             </div>
           </div>
           <div

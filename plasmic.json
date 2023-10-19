@@ -329,6 +329,21 @@
           "id": "ooXZ7l3QalsI",
           "name": "Bappebti-removeb.png 2",
           "filePath": "../public/plasmic/iddr/images/bappebtiRemovebpng2.png"
+        },
+        {
+          "id": "RsURDTnlAKpH",
+          "name": "Tampilan-Halaman-Portofolio-Kripto-di-Aplikasi-Nanovest.png",
+          "filePath": "../public/plasmic/iddr/images/tampilanHalamanPortofolioKriptoDiAplikasiNanovestpng.png"
+        },
+        {
+          "id": "yZ3V2D4tyuFl",
+          "name": "icons-right.webp",
+          "filePath": "../public/plasmic/iddr/images/iconsRightwebp.webp"
+        },
+        {
+          "id": "pr5uAPnabNYH",
+          "name": "icons-left.webp",
+          "filePath": "../public/plasmic/iddr/images/iconsLeftwebp.webp"
         }
       ],
       "indirect": false,
