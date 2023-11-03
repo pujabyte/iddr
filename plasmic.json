@@ -68,6 +68,12 @@
           "name": "SideEffect",
           "displayName": "hostless-side-effect",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "SpkzmXJqg27p",
+          "name": "Timer",
+          "displayName": "hostless-timer",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
       ],
       "splitsProviderFilePath": "",
@@ -385,7 +391,8 @@
         }
       ],
       "splitsProviderFilePath": "",
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -407,7 +414,8 @@
         }
       ],
       "splitsProviderFilePath": "",
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "jkU633o1Cz7HrJdwdxhVHk",
@@ -460,8 +468,8 @@
           }
         }
       ],
-      "jsBundleThemes": [],
-      "splitsProviderFilePath": ""
+      "splitsProviderFilePath": "",
+      "customFunctions": []
     },
     {
       "projectId": "ohDidvG9XsCeFumugENU3J",
@@ -866,6 +874,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.318",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.318/dist/plasmic.schema.json"
+  "cliVersion": "0.1.322",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.322/dist/plasmic.schema.json"
 }

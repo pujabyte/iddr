@@ -51,6 +51,7 @@ import { useScreenVariants as useScreenVariantsvWlfn14Jm89In } from "./PlasmicGl
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
+import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plasmic_plasmic_rich_components.module.css"; // plasmic-import: jkU633o1Cz7HrJdwdxhVHk/projectcss
 import projectcss from "./plasmic_iddr.module.css"; // plasmic-import: dJqK6LEBeKixAKagJBAmzL/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: S-EPZS57Iq32/css
 
@@ -176,6 +177,7 @@ function PlasmicHomepage__RenderFunc(props: {
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
             plasmic_antd_5_hostless_css.plasmic_tokens,
+            plasmic_plasmic_rich_components_css.plasmic_tokens,
             sty.root
           )}
         >
@@ -1101,10 +1103,18 @@ function PlasmicHomepage__RenderFunc(props: {
                 data={[
                   {
                     id: 1,
-                    desc: "Indonesia Digital Rupiah Collateral Report - 30 Sept 2023",
-                    date: "Last Updated, 30 sept 2023",
+                    desc: "Indonesia Digital Rupiah Collateral Report - 30 Sep 2023",
+                    date: "Last Updated, 30 sep 2023",
                     url: [
                       "https://www.iddr.io/IDDR-Collateral-Report-30-Sept-2023.pdf"
+                    ]
+                  },
+                  {
+                    id: 2,
+                    desc: "Indonesia Digital Rupiah Collateral Report - 1 Nov 2023",
+                    date: "Last Updated, 1 nov 2023",
+                    url: [
+                      "https://www.iddr.io/IDDR-Collateral-Report-01112023.pdf"
                     ]
                   }
                 ]}
@@ -1499,6 +1509,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         })()
                       : undefined;
                     if (
+                      $steps["updateNavbarIsMenuOpen"] != null &&
                       typeof $steps["updateNavbarIsMenuOpen"] === "object" &&
                       typeof $steps["updateNavbarIsMenuOpen"].then ===
                         "function"
@@ -1568,6 +1579,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         })()
                       : undefined;
                     if (
+                      $steps["updateNavbarIsMenuOpen"] != null &&
                       typeof $steps["updateNavbarIsMenuOpen"] === "object" &&
                       typeof $steps["updateNavbarIsMenuOpen"].then ===
                         "function"
@@ -1637,6 +1649,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         })()
                       : undefined;
                     if (
+                      $steps["updateNavbarIsMenuOpen"] != null &&
                       typeof $steps["updateNavbarIsMenuOpen"] === "object" &&
                       typeof $steps["updateNavbarIsMenuOpen"].then ===
                         "function"
@@ -1706,6 +1719,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         })()
                       : undefined;
                     if (
+                      $steps["updateNavbarIsMenuOpen"] != null &&
                       typeof $steps["updateNavbarIsMenuOpen"] === "object" &&
                       typeof $steps["updateNavbarIsMenuOpen"].then ===
                         "function"
@@ -1772,6 +1786,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       })()
                     : undefined;
                   if (
+                    $steps["updateNavbarIsMenuOpen"] != null &&
                     typeof $steps["updateNavbarIsMenuOpen"] === "object" &&
                     typeof $steps["updateNavbarIsMenuOpen"].then === "function"
                   ) {
