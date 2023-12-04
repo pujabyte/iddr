@@ -37,7 +37,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Button2 from "../../Button2"; // plasmic-import: R7FQakg198I/component
-import { Fetcher } from "@plasmicapp/react-web/lib/data-sources"; // plasmic-import: _5gNtUzhxNety/codeComponent
+import { Fetcher } from "@plasmicapp/react-web/lib/data-sources";
 
 import { useScreenVariants as useScreenVariantsvWlfn14Jm89In } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: vWLFN14Jm89IN/globalVariant
 
@@ -506,7 +506,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       () =>
         deriveRenderOpts(props, {
           name: nodeName,
-          descendantNames: [...PlasmicDescendants[nodeName]],
+          descendantNames: PlasmicDescendants[nodeName],
           internalArgPropNames: PlasmicMenuOverlay__ArgProps,
           internalVariantPropNames: PlasmicMenuOverlay__VariantProps
         }),

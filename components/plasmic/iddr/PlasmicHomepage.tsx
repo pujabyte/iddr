@@ -36,14 +36,14 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import { PlasmicHead } from "@plasmicapp/react-web"; // plasmic-import: T1KJa5bGl4Ip-/codeComponent
+import { PlasmicHead } from "@plasmicapp/react-web";
 import Navbar from "../../Navbar"; // plasmic-import: ThJz7UjPOLc/component
-import { Reveal } from "@plasmicpkgs/react-awesome-reveal"; // plasmic-import: R6s1FdhksG/codeComponent
+import { Reveal } from "@plasmicpkgs/react-awesome-reveal";
 import Button2 from "../../Button2"; // plasmic-import: R7FQakg198I/component
 import NetworkCard from "../../NetworkCard"; // plasmic-import: DybXCSmk6J/component
-import { DataProvider } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: D4RbnlpRXg3/codeComponent
-import { RichList } from "@plasmicpkgs/plasmic-rich-components"; // plasmic-import: Hh2OL1EveIF/codeComponent
-import { Embed } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: PKldDYkH42/codeComponent
+import { DataProvider } from "@plasmicpkgs/plasmic-basic-components";
+import { RichList } from "@plasmicpkgs/plasmic-rich-components/skinny/rich-list";
+import { Embed } from "@plasmicpkgs/plasmic-basic-components";
 import MenuOverlay from "../../MenuOverlay"; // plasmic-import: l7JCXcEFvGg/component
 
 import { useScreenVariants as useScreenVariantsvWlfn14Jm89In } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: vWLFN14Jm89IN/globalVariant
@@ -1116,6 +1116,14 @@ function PlasmicHomepage__RenderFunc(props: {
                     url: [
                       "https://www.iddr.io/IDDR-Collateral-Report-01112023.pdf"
                     ]
+                  },
+                  {
+                    id: 3,
+                    desc: "Indonesia Digital Rupiah Collateral Report - 1 Des 2023",
+                    date: "Last Updated, 1 Des 2023",
+                    url: [
+                      "https://www.iddr.io/IDDR-Collateral-Report-30-Nov-2023"
+                    ]
                   }
                 ]}
                 name={"bankReport"}
@@ -1907,7 +1915,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       () =>
         deriveRenderOpts(props, {
           name: nodeName,
-          descendantNames: [...PlasmicDescendants[nodeName]],
+          descendantNames: PlasmicDescendants[nodeName],
           internalArgPropNames: PlasmicHomepage__ArgProps,
           internalVariantPropNames: PlasmicHomepage__VariantProps
         }),

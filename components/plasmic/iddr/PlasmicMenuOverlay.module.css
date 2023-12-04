@@ -100,9 +100,6 @@
 .img > picture > img {
   object-fit: cover;
 }
-.img > :global(.__wab_img-spacer) > img {
-  object-fit: cover;
-}
 .freeBox__chQjf {
   display: flex;
   position: relative;
@@ -117,7 +114,7 @@
 .svg__tU4D {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__x3AX1 {
@@ -138,7 +135,7 @@
 .svg__x5Spj {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .freeBox__r4V2Z {
@@ -155,7 +152,7 @@
 .svg__a7Iw {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__eXkhb {
@@ -176,7 +173,7 @@
 .svg__gi9Bv {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .freeBox__i7A6U {
@@ -193,7 +190,7 @@
 .svg__xDm8R {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text___67P2I {
@@ -214,7 +211,7 @@
 .svg__kpHwz {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .freeBox__uOhaw {
@@ -231,7 +228,7 @@
 .svg__eLa7H {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__zc9HC {
@@ -252,7 +249,7 @@
 .svg__nXbiL {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .freeBox__nYnIb {
