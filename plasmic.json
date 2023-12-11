@@ -77,7 +77,8 @@
         }
       ],
       "splitsProviderFilePath": "",
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "dJqK6LEBeKixAKagJBAmzL",
@@ -391,7 +392,8 @@
         }
       ],
       "splitsProviderFilePath": "",
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -413,7 +415,8 @@
         }
       ],
       "splitsProviderFilePath": "",
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "jkU633o1Cz7HrJdwdxhVHk",
@@ -467,7 +470,8 @@
         }
       ],
       "splitsProviderFilePath": "",
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "ohDidvG9XsCeFumugENU3J",
@@ -855,7 +859,8 @@
         }
       ],
       "splitsProviderFilePath": "",
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {
@@ -872,6 +877,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.323",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.323/dist/plasmic.schema.json"
+  "cliVersion": "0.1.324",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.324/dist/plasmic.schema.json"
 }
