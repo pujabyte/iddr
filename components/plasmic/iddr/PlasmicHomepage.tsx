@@ -1137,10 +1137,9 @@ function PlasmicHomepage__RenderFunc(props: {
                       className={classNames("__wab_instance", sty.dataList)}
                       content={(() => {
                         const __composite = [
-                          { role: "content", fieldId: null, isHidden: null }
+                          { key: "desc", fieldId: null, role: "content" }
                         ];
                         __composite["0"]["fieldId"] = "date";
-                        __composite["0"]["isHidden"] = false;
                         return __composite;
                       })()}
                       data={(() => {
@@ -1158,8 +1157,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       })()}
                       hideSearch={true}
                       image={(() => {
-                        const __composite = { fieldId: null, expr: null };
-                        __composite["fieldId"] = "";
+                        const __composite = { expr: null };
                         __composite["expr"] = (currentItem, currentValue) => {
                           return "https://iddr-dev-wheat.vercel.app/plasmic/iddr/images/documentIconpng.png";
                         };
@@ -1170,7 +1168,6 @@ function PlasmicHomepage__RenderFunc(props: {
                       }}
                       pageSize={5}
                       pagination={true}
-                      rowActions={[]}
                       title={(() => {
                         const __composite = [{ role: "title", fieldId: null }];
                         __composite["0"]["fieldId"] = "desc";
