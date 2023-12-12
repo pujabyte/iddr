@@ -3,6 +3,7 @@ import {
   PlasmicButton2,
   DefaultButton2Props
 } from "./plasmic/iddr/PlasmicButton2";
+
 import {
   ButtonRef,
   HtmlAnchorOnlyProps,
@@ -31,6 +32,4 @@ export type ButtonComponentType = {
 };
 const Button2 = React.forwardRef(Button2_) as any as ButtonComponentType;
 
-export default Object.assign(Button2, {
-  __plumeType: "button"
-});
+export default Object.assign(Button2, { __plumeType: "button" });
