@@ -17,25 +17,48 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
-
 import {
-  hasVariant,
-  classNames,
-  wrapWithClassName,
-  createPlasmicElementProxy,
-  makeFragment,
+  Flex as Flex__,
   MultiChoiceArg,
+  PlasmicDataSourceContextProvider as PlasmicDataSourceContextProvider__,
+  PlasmicIcon as PlasmicIcon__,
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
+  PlasmicPageGuard as PlasmicPageGuard__,
   SingleBooleanChoiceArg,
   SingleChoiceArg,
-  pick,
-  omit,
-  useTrigger,
+  Stack as Stack__,
   StrictProps,
+  Trans as Trans__,
+  classNames,
+  createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  generateOnMutateForSpec,
+  generateStateOnChangeProp,
+  generateStateOnChangePropForCodeComponents,
+  generateStateValueProp,
+  get as $stateGet,
+  hasVariant,
+  initializeCodeComponentStates,
+  initializePlasmicStates,
+  makeFragment,
+  omit,
+  pick,
+  renderPlasmicSlot,
+  set as $stateSet,
+  useCurrentUser,
+  useDollarState,
+  usePlasmicTranslator,
+  useTrigger,
+  wrapWithClassName
 } from "@plasmicapp/react-web";
+import {
+  DataCtxReader as DataCtxReader__,
+  useDataEnv,
+  useGlobalActions
+} from "@plasmicapp/react-web/lib/host";
+
 import { PlasmicHead } from "@plasmicapp/react-web";
 import Navbar from "../../Navbar"; // plasmic-import: ThJz7UjPOLc/component
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal";
@@ -79,24 +102,24 @@ type ArgPropType = keyof PlasmicHomepage__ArgsType;
 export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
-  root?: p.Flex<"div">;
-  pageMetadataOverride?: p.Flex<typeof PlasmicHead>;
-  navbar?: p.Flex<typeof Navbar>;
-  h3?: p.Flex<"h3">;
-  title?: p.Flex<"div">;
-  desc?: p.Flex<"div">;
-  desc2?: p.Flex<"div">;
-  desc3?: p.Flex<"div">;
-  desc4?: p.Flex<"div">;
-  title3?: p.Flex<"div">;
-  dataProvider?: p.Flex<typeof DataProvider>;
-  dataList?: p.Flex<typeof RichList>;
-  title2?: p.Flex<"div">;
-  embedHtml?: p.Flex<typeof Embed>;
-  cmc?: p.Flex<"a"> & Partial<LinkProps>;
-  telegram?: p.Flex<"a"> & Partial<LinkProps>;
-  twitter?: p.Flex<"a"> & Partial<LinkProps>;
-  menuOverlay?: p.Flex<typeof MenuOverlay>;
+  root?: Flex__<"div">;
+  pageMetadataOverride?: Flex__<typeof PlasmicHead>;
+  navbar?: Flex__<typeof Navbar>;
+  h3?: Flex__<"h3">;
+  title?: Flex__<"div">;
+  desc?: Flex__<"div">;
+  desc2?: Flex__<"div">;
+  desc3?: Flex__<"div">;
+  desc4?: Flex__<"div">;
+  title3?: Flex__<"div">;
+  dataProvider?: Flex__<typeof DataProvider>;
+  dataList?: Flex__<typeof RichList>;
+  title2?: Flex__<"div">;
+  embedHtml?: Flex__<typeof Embed>;
+  cmc?: Flex__<"a"> & Partial<LinkProps>;
+  telegram?: Flex__<"a"> & Partial<LinkProps>;
+  twitter?: Flex__<"a"> & Partial<LinkProps>;
+  menuOverlay?: Flex__<typeof MenuOverlay>;
 };
 
 export interface DefaultHomepageProps {}
@@ -126,13 +149,13 @@ function PlasmicHomepage__RenderFunc(props: {
   };
 
   const __nextRouter = useNextRouter();
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
 
-  const stateSpecs: Parameters<typeof p.useDollarState>[0] = React.useMemo(
+  const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
     () => [
       {
         path: "navbar.isMenuOpen",
@@ -143,7 +166,7 @@ function PlasmicHomepage__RenderFunc(props: {
     ],
     [$props, $ctx, $refs]
   );
-  const $state = p.useDollarState(stateSpecs, {
+  const $state = useDollarState(stateSpecs, {
     $props,
     $ctx,
     $queries: {},
@@ -194,11 +217,11 @@ function PlasmicHomepage__RenderFunc(props: {
             data-plasmic-name={"navbar"}
             data-plasmic-override={overrides.navbar}
             className={classNames("__wab_instance", sty.navbar)}
-            isMenuOpen={p.generateStateValueProp($state, [
+            isMenuOpen={generateStateValueProp($state, [
               "navbar",
               "isMenuOpen"
             ])}
-            onIsMenuOpenChange={p.generateStateOnChangeProp($state, [
+            onIsMenuOpenChange={generateStateOnChangeProp($state, [
               "navbar",
               "isMenuOpen"
             ])}
@@ -216,12 +239,12 @@ function PlasmicHomepage__RenderFunc(props: {
                     direction={"left"}
                     triggerOnce={true}
                   >
-                    <p.Stack
+                    <Stack__
                       as={"div"}
                       hasGap={true}
                       className={classNames(projectcss.all, sty.freeBox__xFVw0)}
                     >
-                      <p.Stack
+                      <Stack__
                         as={"div"}
                         hasGap={true}
                         className={classNames(
@@ -250,8 +273,8 @@ function PlasmicHomepage__RenderFunc(props: {
                             "Inovasi Mata Uang Digital Nusantara untuk menghubungkan \ndunia digital dengan Rupiah anda"
                           }
                         </div>
-                      </p.Stack>
-                      <p.Stack
+                      </Stack__>
+                      <Stack__
                         as={"div"}
                         hasGap={true}
                         className={classNames(
@@ -336,8 +359,8 @@ function PlasmicHomepage__RenderFunc(props: {
                             {"Pelajari Selengkapnya ->"}
                           </div>
                         </Button2>
-                      </p.Stack>
-                      <p.Stack
+                      </Stack__>
+                      <Stack__
                         as={"div"}
                         hasGap={true}
                         className={classNames(
@@ -391,8 +414,8 @@ function PlasmicHomepage__RenderFunc(props: {
                             {"Get IDDR"}
                           </div>
                         </Button2>
-                      </p.Stack>
-                    </p.Stack>
+                      </Stack__>
+                    </Stack__>
                   </Reveal>
                 </div>
                 <div className={classNames(projectcss.all, sty.column__pkUaO)}>
@@ -414,7 +437,7 @@ function PlasmicHomepage__RenderFunc(props: {
             id={"about"}
           >
             <div className={classNames(projectcss.all, sty.freeBox__yOjcJ)}>
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.columns__aqzXj)}
@@ -431,7 +454,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       direction={"left"}
                       triggerOnce={true}
                     >
-                      <p.PlasmicImg
+                      <PlasmicImg__
                         alt={""}
                         className={classNames(sty.img__joUr)}
                         displayHeight={"auto"}
@@ -451,7 +474,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     </Reveal>
                   </div>
                 </div>
-                <p.Stack
+                <Stack__
                   as={"div"}
                   hasGap={true}
                   className={classNames(projectcss.all, sty.column__sBMrx)}
@@ -487,8 +510,8 @@ function PlasmicHomepage__RenderFunc(props: {
                       </div>
                     </div>
                   </Reveal>
-                </p.Stack>
-              </p.Stack>
+                </Stack__>
+              </Stack__>
             </div>
           </div>
           <div
@@ -496,12 +519,12 @@ function PlasmicHomepage__RenderFunc(props: {
             id={"contract"}
           >
             <div className={classNames(projectcss.all, sty.freeBox__c3I2J)}>
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.columns__s3Jve)}
               >
-                <p.Stack
+                <Stack__
                   as={"div"}
                   hasGap={true}
                   className={classNames(projectcss.all, sty.column__y58C)}
@@ -565,7 +588,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           {"Circulating supply"}
                         </div>
                       </div>
-                      <p.Stack
+                      <Stack__
                         as={"div"}
                         hasGap={true}
                         className={classNames(
@@ -579,8 +602,8 @@ function PlasmicHomepage__RenderFunc(props: {
                             sty.networkCard__n9Ai3
                           )}
                         >
-                          <p.Stack
-                            as={p.PlasmicLink}
+                          <Stack__
+                            as={PlasmicLink__}
                             hasGap={true}
                             className={classNames(
                               projectcss.all,
@@ -637,7 +660,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                 role={"img"}
                               />
                             </div>
-                          </p.Stack>
+                          </Stack__>
                         </NetworkCard>
                         <NetworkCard
                           className={classNames(
@@ -645,8 +668,8 @@ function PlasmicHomepage__RenderFunc(props: {
                             sty.networkCard__sg0Br
                           )}
                         >
-                          <p.Stack
-                            as={p.PlasmicLink}
+                          <Stack__
+                            as={PlasmicLink__}
                             hasGap={true}
                             className={classNames(
                               projectcss.all,
@@ -701,7 +724,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                 role={"img"}
                               />
                             </div>
-                          </p.Stack>
+                          </Stack__>
                         </NetworkCard>
                         <NetworkCard
                           className={classNames(
@@ -709,8 +732,8 @@ function PlasmicHomepage__RenderFunc(props: {
                             sty.networkCard__piGP
                           )}
                         >
-                          <p.Stack
-                            as={p.PlasmicLink}
+                          <Stack__
+                            as={PlasmicLink__}
                             hasGap={true}
                             className={classNames(
                               projectcss.all,
@@ -765,12 +788,12 @@ function PlasmicHomepage__RenderFunc(props: {
                                 role={"img"}
                               />
                             </div>
-                          </p.Stack>
+                          </Stack__>
                         </NetworkCard>
-                      </p.Stack>
+                      </Stack__>
                     </div>
                   </Reveal>
-                </p.Stack>
+                </Stack__>
                 <div className={classNames(projectcss.all, sty.column__abTQl)}>
                   <div
                     className={classNames(projectcss.all, sty.freeBox___9TUHz)}
@@ -783,7 +806,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       direction={"left"}
                       triggerOnce={true}
                     >
-                      <p.PlasmicImg
+                      <PlasmicImg__
                         alt={""}
                         className={classNames(sty.img__syY7)}
                         displayHeight={"auto"}
@@ -803,7 +826,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     </Reveal>
                   </div>
                 </div>
-              </p.Stack>
+              </Stack__>
             </div>
           </div>
           <div
@@ -816,7 +839,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 direction={"up"}
                 triggerOnce={true}
               >
-                <p.Stack
+                <Stack__
                   as={"div"}
                   data-plasmic-name={"title"}
                   data-plasmic-override={overrides.title}
@@ -845,24 +868,24 @@ function PlasmicHomepage__RenderFunc(props: {
                       "Kami bekerja dengan pengalaman dan keahlian terbaik di industri keuangan."
                     }
                   </h6>
-                </p.Stack>
+                </Stack__>
               </Reveal>
               <Reveal
                 className={classNames("__wab_instance", sty.reveal__yDdRl)}
                 direction={"up"}
                 triggerOnce={true}
               >
-                <p.Stack
+                <Stack__
                   as={"div"}
                   hasGap={true}
                   className={classNames(projectcss.all, sty.columns__gWgGi)}
                 >
-                  <p.Stack
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.column__cWWzc)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__uoVx)}
                       displayHeight={"200px"}
@@ -905,13 +928,13 @@ function PlasmicHomepage__RenderFunc(props: {
                         {"CEO"}
                       </div>
                     </div>
-                  </p.Stack>
-                  <p.Stack
+                  </Stack__>
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.column__exXk1)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__obYqS)}
                       displayHeight={"200px"}
@@ -954,13 +977,13 @@ function PlasmicHomepage__RenderFunc(props: {
                         {"CFO"}
                       </div>
                     </div>
-                  </p.Stack>
-                  <p.Stack
+                  </Stack__>
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.column__dDnKp)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__bCni)}
                       displayHeight={"200px"}
@@ -1003,13 +1026,13 @@ function PlasmicHomepage__RenderFunc(props: {
                         {"Finance Advisor"}
                       </div>
                     </div>
-                  </p.Stack>
-                  <p.Stack
+                  </Stack__>
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.column__zEpn)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img___4UDsR)}
                       displayHeight={"200px"}
@@ -1052,8 +1075,8 @@ function PlasmicHomepage__RenderFunc(props: {
                         {"Technical Advisor"}
                       </div>
                     </div>
-                  </p.Stack>
-                </p.Stack>
+                  </Stack__>
+                </Stack__>
               </Reveal>
             </div>
           </div>
@@ -1067,7 +1090,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 direction={"up"}
                 triggerOnce={true}
               >
-                <p.Stack
+                <Stack__
                   as={"div"}
                   data-plasmic-name={"title3"}
                   data-plasmic-override={overrides.title3}
@@ -1094,7 +1117,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   >
                     {"Laporan Bulanan Bank Indonesia Digital Rupiah"}
                   </h6>
-                </p.Stack>
+                </Stack__>
               </Reveal>
               <DataProvider
                 data-plasmic-name={"dataProvider"}
@@ -1126,17 +1149,25 @@ function PlasmicHomepage__RenderFunc(props: {
                     ]
                   },
                   {
-                    id: 3,
+                    id: 4,
                     desc: "Indonesia Digital Rupiah Collateral Report - 1 Jan 2024",
-                    date: "Last Updated, 4 Jan 2023",
+                    date: "Last Updated, 4 Jan 2024",
                     url: [
                       "https://www.iddr.io/IDDR-Collateral-Report-31-Dec-2023.pdf"
+                    ]
+                  },
+                  {
+                    id: 5,
+                    desc: "Indonesia Digital Rupiah Collateral Report - 1 feb 2024",
+                    date: "Last Updated, 4 Feb 2024",
+                    url: [
+                      "Indonesia Digital Rupiah Collateral Report - 1feb2024.pdf"
                     ]
                   }
                 ]}
                 name={"bankReport"}
               >
-                <ph.DataCtxReader>
+                <DataCtxReader__>
                   {$ctx => (
                     <RichList
                       data-plasmic-name={"dataList"}
@@ -1184,7 +1215,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       type={"list"}
                     />
                   )}
-                </ph.DataCtxReader>
+                </DataCtxReader__>
               </DataProvider>
             </div>
           </div>
@@ -1199,7 +1230,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 triggerOnce={true}
               >
                 <div className={classNames(projectcss.all, sty.freeBox__fwQon)}>
-                  <p.Stack
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__dvduG)}
@@ -1245,7 +1276,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         {"Get IDDR"}
                       </div>
                     </Button2>
-                  </p.Stack>
+                  </Stack__>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__dajRv)}
                   >
@@ -1273,20 +1304,20 @@ function PlasmicHomepage__RenderFunc(props: {
             id={"contact"}
           >
             <div className={classNames(projectcss.all, sty.freeBox__lcmS1)}>
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.columns__vDqJ9)}
               >
                 <div className={classNames(projectcss.all, sty.column__jtIQ)}>
-                  <p.Stack
+                  <Stack__
                     as={"div"}
                     data-plasmic-name={"title2"}
                     data-plasmic-override={overrides.title2}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.title2)}
                   >
-                    <p.Stack
+                    <Stack__
                       as={"div"}
                       hasGap={true}
                       className={classNames(projectcss.all, sty.freeBox__o65N1)}
@@ -1309,7 +1340,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           </span>
                         </React.Fragment>
                       </div>
-                      <p.PlasmicImg
+                      <PlasmicImg__
                         alt={""}
                         className={classNames(sty.img___52WA5)}
                         displayHeight={"auto"}
@@ -1326,7 +1357,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           aspectRatio: undefined
                         }}
                       />
-                    </p.Stack>
+                    </Stack__>
                     <h2
                       className={classNames(
                         projectcss.all,
@@ -1358,7 +1389,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         "JL. Jend. Sudirman Kav 21, Kel. Karet Kuningan, Kec. Setiabudi, Jakarta Selatan, DKI Jakarta, Indonesia 12920\n\ninfo@iddr.io"
                       }
                     </div>
-                  </p.Stack>
+                  </Stack__>
                 </div>
                 <div className={classNames(projectcss.all, sty.column__haRrA)}>
                   <Embed
@@ -1372,10 +1403,10 @@ function PlasmicHomepage__RenderFunc(props: {
                     }
                   />
                 </div>
-              </p.Stack>
+              </Stack__>
             </div>
           </div>
-          <p.Stack
+          <Stack__
             as={"div"}
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__tk5Ht)}
@@ -1390,12 +1421,12 @@ function PlasmicHomepage__RenderFunc(props: {
               >
                 {"\u00a9 2023 by Indonesia Digital Rupiah"}
               </div>
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__y0C9B)}
               >
-                <p.PlasmicLink
+                <PlasmicLink__
                   data-plasmic-name={"cmc"}
                   data-plasmic-override={overrides.cmc}
                   className={classNames(projectcss.all, projectcss.a, sty.cmc)}
@@ -1408,8 +1439,8 @@ function PlasmicHomepage__RenderFunc(props: {
                     className={classNames(projectcss.all, sty.svg__bBfyP)}
                     role={"img"}
                   />
-                </p.PlasmicLink>
-                <p.PlasmicLink
+                </PlasmicLink__>
+                <PlasmicLink__
                   data-plasmic-name={"telegram"}
                   data-plasmic-override={overrides.telegram}
                   className={classNames(
@@ -1426,8 +1457,8 @@ function PlasmicHomepage__RenderFunc(props: {
                     className={classNames(projectcss.all, sty.svg__asEhz)}
                     role={"img"}
                   />
-                </p.PlasmicLink>
-                <p.PlasmicLink
+                </PlasmicLink__>
+                <PlasmicLink__
                   data-plasmic-name={"twitter"}
                   data-plasmic-override={overrides.twitter}
                   className={classNames(
@@ -1444,10 +1475,10 @@ function PlasmicHomepage__RenderFunc(props: {
                     className={classNames(projectcss.all, sty.svg__bkLqu)}
                     role={"img"}
                   />
-                </p.PlasmicLink>
-              </p.Stack>
+                </PlasmicLink__>
+              </Stack__>
             </div>
-          </p.Stack>
+          </Stack__>
           {(
             hasVariant(globalVariants, "screen", "mobileOnly")
               ? (() => {
@@ -1515,8 +1546,8 @@ function PlasmicHomepage__RenderFunc(props: {
                             }
                             const { objRoot, variablePath } = variable;
 
-                            const oldValue = p.get(objRoot, variablePath);
-                            p.set(objRoot, variablePath, !oldValue);
+                            const oldValue = $stateGet(objRoot, variablePath);
+                            $stateSet(objRoot, variablePath, !oldValue);
                             return !oldValue;
                           })?.apply(null, [actionArgs]);
                         })()
@@ -1585,8 +1616,8 @@ function PlasmicHomepage__RenderFunc(props: {
                             }
                             const { objRoot, variablePath } = variable;
 
-                            const oldValue = p.get(objRoot, variablePath);
-                            p.set(objRoot, variablePath, !oldValue);
+                            const oldValue = $stateGet(objRoot, variablePath);
+                            $stateSet(objRoot, variablePath, !oldValue);
                             return !oldValue;
                           })?.apply(null, [actionArgs]);
                         })()
@@ -1655,8 +1686,8 @@ function PlasmicHomepage__RenderFunc(props: {
                             }
                             const { objRoot, variablePath } = variable;
 
-                            const oldValue = p.get(objRoot, variablePath);
-                            p.set(objRoot, variablePath, !oldValue);
+                            const oldValue = $stateGet(objRoot, variablePath);
+                            $stateSet(objRoot, variablePath, !oldValue);
                             return !oldValue;
                           })?.apply(null, [actionArgs]);
                         })()
@@ -1725,8 +1756,8 @@ function PlasmicHomepage__RenderFunc(props: {
                             }
                             const { objRoot, variablePath } = variable;
 
-                            const oldValue = p.get(objRoot, variablePath);
-                            p.set(objRoot, variablePath, !oldValue);
+                            const oldValue = $stateGet(objRoot, variablePath);
+                            $stateSet(objRoot, variablePath, !oldValue);
                             return !oldValue;
                           })?.apply(null, [actionArgs]);
                         })()
@@ -1762,7 +1793,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 </Button2>
               }
             >
-              <p.PlasmicLink
+              <PlasmicLink__
                 className={classNames(
                   projectcss.all,
                   projectcss.a,
@@ -1792,8 +1823,8 @@ function PlasmicHomepage__RenderFunc(props: {
                           }
                           const { objRoot, variablePath } = variable;
 
-                          const oldValue = p.get(objRoot, variablePath);
-                          p.set(objRoot, variablePath, !oldValue);
+                          const oldValue = $stateGet(objRoot, variablePath);
+                          $stateSet(objRoot, variablePath, !oldValue);
                           return !oldValue;
                         })?.apply(null, [actionArgs]);
                       })()
@@ -1814,7 +1845,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   className={classNames(projectcss.all, sty.svg__m6LrQ)}
                   role={"img"}
                 />
-              </p.PlasmicLink>
+              </PlasmicLink__>
             </MenuOverlay>
           ) : null}
         </div>

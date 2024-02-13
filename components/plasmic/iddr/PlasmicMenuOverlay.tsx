@@ -17,25 +17,48 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
-
 import {
-  hasVariant,
-  classNames,
-  wrapWithClassName,
-  createPlasmicElementProxy,
-  makeFragment,
+  Flex as Flex__,
   MultiChoiceArg,
+  PlasmicDataSourceContextProvider as PlasmicDataSourceContextProvider__,
+  PlasmicIcon as PlasmicIcon__,
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
+  PlasmicPageGuard as PlasmicPageGuard__,
   SingleBooleanChoiceArg,
   SingleChoiceArg,
-  pick,
-  omit,
-  useTrigger,
+  Stack as Stack__,
   StrictProps,
+  Trans as Trans__,
+  classNames,
+  createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  generateOnMutateForSpec,
+  generateStateOnChangeProp,
+  generateStateOnChangePropForCodeComponents,
+  generateStateValueProp,
+  get as $stateGet,
+  hasVariant,
+  initializeCodeComponentStates,
+  initializePlasmicStates,
+  makeFragment,
+  omit,
+  pick,
+  renderPlasmicSlot,
+  set as $stateSet,
+  useCurrentUser,
+  useDollarState,
+  usePlasmicTranslator,
+  useTrigger,
+  wrapWithClassName
 } from "@plasmicapp/react-web";
+import {
+  DataCtxReader as DataCtxReader__,
+  useDataEnv,
+  useGlobalActions
+} from "@plasmicapp/react-web/lib/host";
+
 import Button2 from "../../Button2"; // plasmic-import: R7FQakg198I/component
 import { Fetcher } from "@plasmicapp/react-web/lib/data-sources";
 
@@ -78,9 +101,9 @@ export const PlasmicMenuOverlay__ArgProps = new Array<ArgPropType>(
 );
 
 export type PlasmicMenuOverlay__OverridesType = {
-  menuOverlay?: p.Flex<"div">;
-  link?: p.Flex<"a"> & Partial<LinkProps>;
-  img?: p.Flex<typeof p.PlasmicImg>;
+  menuOverlay?: Flex__<"div">;
+  link?: Flex__<"a"> & Partial<LinkProps>;
+  img?: Flex__<typeof PlasmicImg__>;
 };
 
 export interface DefaultMenuOverlayProps {
@@ -118,11 +141,11 @@ function PlasmicMenuOverlay__RenderFunc(props: {
   };
 
   const __nextRouter = useNextRouter();
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsvWlfn14Jm89In()
@@ -146,9 +169,9 @@ function PlasmicMenuOverlay__RenderFunc(props: {
       )}
     >
       <div className={classNames(projectcss.all, sty.freeBox__fqk0J)}>
-        {p.renderPlasmicSlot({
+        {renderPlasmicSlot({
           defaultContents: (
-            <p.PlasmicLink
+            <PlasmicLink__
               className={classNames(
                 projectcss.all,
                 projectcss.a,
@@ -191,24 +214,24 @@ function PlasmicMenuOverlay__RenderFunc(props: {
                 className={classNames(projectcss.all, sty.svg___1NQaF)}
                 role={"img"}
               />
-            </p.PlasmicLink>
+            </PlasmicLink__>
           ),
           value: args.children
         })}
       </div>
-      <p.Stack
+      <Stack__
         as={"div"}
         hasGap={true}
         className={classNames(projectcss.all, sty.freeBox__nVacy)}
       >
-        <p.PlasmicLink
+        <PlasmicLink__
           data-plasmic-name={"link"}
           data-plasmic-override={overrides.link}
           className={classNames(projectcss.all, projectcss.a, sty.link)}
           component={Link}
           platform={"nextjs"}
         >
-          <p.PlasmicImg
+          <PlasmicImg__
             data-plasmic-name={"img"}
             data-plasmic-override={overrides.img}
             alt={""}
@@ -227,9 +250,9 @@ function PlasmicMenuOverlay__RenderFunc(props: {
               aspectRatio: undefined
             }}
           />
-        </p.PlasmicLink>
+        </PlasmicLink__>
         <div className={classNames(projectcss.all, sty.freeBox__chQjf)}>
-          {p.renderPlasmicSlot({
+          {renderPlasmicSlot({
             defaultContents: (
               <Button2
                 className={classNames("__wab_instance", sty.button2__dzebk)}
@@ -294,7 +317,7 @@ function PlasmicMenuOverlay__RenderFunc(props: {
           })}
         </div>
         <div className={classNames(projectcss.all, sty.freeBox__r4V2Z)}>
-          {p.renderPlasmicSlot({
+          {renderPlasmicSlot({
             defaultContents: (
               <Button2
                 className={classNames("__wab_instance", sty.button2__jaKj)}
@@ -329,7 +352,7 @@ function PlasmicMenuOverlay__RenderFunc(props: {
           })}
         </div>
         <div className={classNames(projectcss.all, sty.freeBox__i7A6U)}>
-          {p.renderPlasmicSlot({
+          {renderPlasmicSlot({
             defaultContents: (
               <Button2
                 className={classNames("__wab_instance", sty.button2___2JGd9)}
@@ -364,7 +387,7 @@ function PlasmicMenuOverlay__RenderFunc(props: {
           })}
         </div>
         <div className={classNames(projectcss.all, sty.freeBox__uOhaw)}>
-          {p.renderPlasmicSlot({
+          {renderPlasmicSlot({
             defaultContents: (
               <Button2
                 className={classNames("__wab_instance", sty.button2__ceWw6)}
@@ -398,13 +421,13 @@ function PlasmicMenuOverlay__RenderFunc(props: {
             value: args.slot4
           })}
         </div>
-      </p.Stack>
+      </Stack__>
       {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : false) ? (
         <div className={classNames(projectcss.all, sty.freeBox__nYnIb)}>
           {(hasVariant(globalVariants, "screen", "mobileOnly") ? false : true)
-            ? p.renderPlasmicSlot({
+            ? renderPlasmicSlot({
                 defaultContents: (
-                  <p.PlasmicLink
+                  <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
@@ -447,7 +470,7 @@ function PlasmicMenuOverlay__RenderFunc(props: {
                       className={classNames(projectcss.all, sty.svg__zje8J)}
                       role={"img"}
                     />
-                  </p.PlasmicLink>
+                  </PlasmicLink__>
                 ),
                 value: args.children2
               })
@@ -469,7 +492,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   menuOverlay: "div";
   link: "a";
-  img: typeof p.PlasmicImg;
+  img: typeof PlasmicImg__;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";

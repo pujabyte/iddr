@@ -17,25 +17,47 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
-
 import {
-  hasVariant,
-  classNames,
-  wrapWithClassName,
-  createPlasmicElementProxy,
-  makeFragment,
+  Flex as Flex__,
   MultiChoiceArg,
+  PlasmicDataSourceContextProvider as PlasmicDataSourceContextProvider__,
+  PlasmicIcon as PlasmicIcon__,
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
+  PlasmicPageGuard as PlasmicPageGuard__,
   SingleBooleanChoiceArg,
   SingleChoiceArg,
-  pick,
-  omit,
-  useTrigger,
+  Stack as Stack__,
   StrictProps,
+  Trans as Trans__,
+  classNames,
+  createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  generateOnMutateForSpec,
+  generateStateOnChangeProp,
+  generateStateOnChangePropForCodeComponents,
+  generateStateValueProp,
+  get as $stateGet,
+  hasVariant,
+  initializeCodeComponentStates,
+  initializePlasmicStates,
+  makeFragment,
+  omit,
+  pick,
+  renderPlasmicSlot,
+  set as $stateSet,
+  useCurrentUser,
+  useDollarState,
+  usePlasmicTranslator,
+  useTrigger,
+  wrapWithClassName
 } from "@plasmicapp/react-web";
+import {
+  DataCtxReader as DataCtxReader__,
+  useDataEnv,
+  useGlobalActions
+} from "@plasmicapp/react-web/lib/host";
 
 import { useScreenVariants as useScreenVariantsvWlfn14Jm89In } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: vWLFN14Jm89IN/globalVariant
 
@@ -70,18 +92,18 @@ export const PlasmicNavbar__ArgProps = new Array<ArgPropType>(
 );
 
 export type PlasmicNavbar__OverridesType = {
-  navbar?: p.Flex<"div">;
-  img?: p.Flex<typeof p.PlasmicImg>;
-  menus?: p.Flex<"div">;
-  mnItem?: p.Flex<"a"> & Partial<LinkProps>;
-  mnItem2?: p.Flex<"a"> & Partial<LinkProps>;
-  mnItem3?: p.Flex<"a"> & Partial<LinkProps>;
-  mnItem5?: p.Flex<"a"> & Partial<LinkProps>;
-  mnItem4?: p.Flex<"a"> & Partial<LinkProps>;
-  mnItem6?: p.Flex<"a"> & Partial<LinkProps>;
-  cmc?: p.Flex<"a"> & Partial<LinkProps>;
-  telegram?: p.Flex<"a"> & Partial<LinkProps>;
-  twitter?: p.Flex<"a"> & Partial<LinkProps>;
+  navbar?: Flex__<"div">;
+  img?: Flex__<typeof PlasmicImg__>;
+  menus?: Flex__<"div">;
+  mnItem?: Flex__<"a"> & Partial<LinkProps>;
+  mnItem2?: Flex__<"a"> & Partial<LinkProps>;
+  mnItem3?: Flex__<"a"> & Partial<LinkProps>;
+  mnItem5?: Flex__<"a"> & Partial<LinkProps>;
+  mnItem4?: Flex__<"a"> & Partial<LinkProps>;
+  mnItem6?: Flex__<"a"> & Partial<LinkProps>;
+  cmc?: Flex__<"a"> & Partial<LinkProps>;
+  telegram?: Flex__<"a"> & Partial<LinkProps>;
+  twitter?: Flex__<"a"> & Partial<LinkProps>;
 };
 
 export interface DefaultNavbarProps {
@@ -115,13 +137,13 @@ function PlasmicNavbar__RenderFunc(props: {
   };
 
   const __nextRouter = useNextRouter();
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
 
-  const stateSpecs: Parameters<typeof p.useDollarState>[0] = React.useMemo(
+  const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
     () => [
       {
         path: "isMenuOpen",
@@ -134,7 +156,7 @@ function PlasmicNavbar__RenderFunc(props: {
     ],
     [$props, $ctx, $refs]
   );
-  const $state = p.useDollarState(stateSpecs, {
+  const $state = useDollarState(stateSpecs, {
     $props,
     $ctx,
     $queries: {},
@@ -163,12 +185,12 @@ function PlasmicNavbar__RenderFunc(props: {
       )}
     >
       <div className={classNames(projectcss.all, sty.freeBox__wvXmR)}>
-        <p.PlasmicLink
+        <PlasmicLink__
           className={classNames(projectcss.all, projectcss.a, sty.link___85NvS)}
           component={Link}
           platform={"nextjs"}
         >
-          <p.PlasmicImg
+          <PlasmicImg__
             data-plasmic-name={"img"}
             data-plasmic-override={overrides.img}
             alt={""}
@@ -187,15 +209,15 @@ function PlasmicNavbar__RenderFunc(props: {
               aspectRatio: undefined
             }}
           />
-        </p.PlasmicLink>
-        <p.Stack
+        </PlasmicLink__>
+        <Stack__
           as={"div"}
           data-plasmic-name={"menus"}
           data-plasmic-override={overrides.menus}
           hasGap={true}
           className={classNames(projectcss.all, sty.menus)}
         >
-          <p.PlasmicLink
+          <PlasmicLink__
             data-plasmic-name={"mnItem"}
             data-plasmic-override={overrides.mnItem}
             className={classNames(projectcss.all, projectcss.a, sty.mnItem)}
@@ -215,8 +237,8 @@ function PlasmicNavbar__RenderFunc(props: {
             >
               {"Beranda"}
             </div>
-          </p.PlasmicLink>
-          <p.PlasmicLink
+          </PlasmicLink__>
+          <PlasmicLink__
             data-plasmic-name={"mnItem2"}
             data-plasmic-override={overrides.mnItem2}
             className={classNames(projectcss.all, projectcss.a, sty.mnItem2)}
@@ -236,8 +258,8 @@ function PlasmicNavbar__RenderFunc(props: {
             >
               {"Tentang"}
             </div>
-          </p.PlasmicLink>
-          <p.PlasmicLink
+          </PlasmicLink__>
+          <PlasmicLink__
             data-plasmic-name={"mnItem3"}
             data-plasmic-override={overrides.mnItem3}
             className={classNames(projectcss.all, projectcss.a, sty.mnItem3)}
@@ -257,8 +279,8 @@ function PlasmicNavbar__RenderFunc(props: {
             >
               {"Tim"}
             </div>
-          </p.PlasmicLink>
-          <p.PlasmicLink
+          </PlasmicLink__>
+          <PlasmicLink__
             data-plasmic-name={"mnItem5"}
             data-plasmic-override={overrides.mnItem5}
             className={classNames(projectcss.all, projectcss.a, sty.mnItem5)}
@@ -278,8 +300,8 @@ function PlasmicNavbar__RenderFunc(props: {
             >
               {"Laporan"}
             </div>
-          </p.PlasmicLink>
-          <p.PlasmicLink
+          </PlasmicLink__>
+          <PlasmicLink__
             data-plasmic-name={"mnItem4"}
             data-plasmic-override={overrides.mnItem4}
             className={classNames(projectcss.all, projectcss.a, sty.mnItem4)}
@@ -299,8 +321,8 @@ function PlasmicNavbar__RenderFunc(props: {
             >
               {"Kontak"}
             </div>
-          </p.PlasmicLink>
-          <p.PlasmicLink
+          </PlasmicLink__>
+          <PlasmicLink__
             data-plasmic-name={"mnItem6"}
             data-plasmic-override={overrides.mnItem6}
             className={classNames(projectcss.all, projectcss.a, sty.mnItem6)}
@@ -321,9 +343,9 @@ function PlasmicNavbar__RenderFunc(props: {
             >
               {"Staking"}
             </div>
-          </p.PlasmicLink>
-        </p.Stack>
-        <p.PlasmicLink
+          </PlasmicLink__>
+        </Stack__>
+        <PlasmicLink__
           className={classNames(projectcss.all, projectcss.a, sty.link__dInIj)}
           component={Link}
           onClick={async event => {
@@ -344,8 +366,8 @@ function PlasmicNavbar__RenderFunc(props: {
                     }
                     const { objRoot, variablePath } = variable;
 
-                    const oldValue = p.get(objRoot, variablePath);
-                    p.set(objRoot, variablePath, !oldValue);
+                    const oldValue = $stateGet(objRoot, variablePath);
+                    $stateSet(objRoot, variablePath, !oldValue);
                     return !oldValue;
                   })?.apply(null, [actionArgs]);
                 })()
@@ -364,8 +386,8 @@ function PlasmicNavbar__RenderFunc(props: {
             className={classNames(projectcss.all, sty.svg__dMoHh)}
             role={"img"}
           />
-        </p.PlasmicLink>
-        <p.PlasmicLink
+        </PlasmicLink__>
+        <PlasmicLink__
           className={classNames(projectcss.all, projectcss.a, sty.link__agVnM)}
           component={Link}
           platform={"nextjs"}
@@ -374,13 +396,13 @@ function PlasmicNavbar__RenderFunc(props: {
             className={classNames(projectcss.all, sty.svg__al8He)}
             role={"img"}
           />
-        </p.PlasmicLink>
-        <p.Stack
+        </PlasmicLink__>
+        <Stack__
           as={"div"}
           hasGap={true}
           className={classNames(projectcss.all, sty.freeBox__rxuxc)}
         >
-          <p.PlasmicLink
+          <PlasmicLink__
             data-plasmic-name={"cmc"}
             data-plasmic-override={overrides.cmc}
             className={classNames(projectcss.all, projectcss.a, sty.cmc)}
@@ -393,8 +415,8 @@ function PlasmicNavbar__RenderFunc(props: {
               className={classNames(projectcss.all, sty.svg__j8Hg9)}
               role={"img"}
             />
-          </p.PlasmicLink>
-          <p.PlasmicLink
+          </PlasmicLink__>
+          <PlasmicLink__
             data-plasmic-name={"telegram"}
             data-plasmic-override={overrides.telegram}
             className={classNames(projectcss.all, projectcss.a, sty.telegram)}
@@ -407,8 +429,8 @@ function PlasmicNavbar__RenderFunc(props: {
               className={classNames(projectcss.all, sty.svg___4U4SS)}
               role={"img"}
             />
-          </p.PlasmicLink>
-          <p.PlasmicLink
+          </PlasmicLink__>
+          <PlasmicLink__
             data-plasmic-name={"twitter"}
             data-plasmic-override={overrides.twitter}
             className={classNames(projectcss.all, projectcss.a, sty.twitter)}
@@ -421,8 +443,8 @@ function PlasmicNavbar__RenderFunc(props: {
               className={classNames(projectcss.all, sty.svg___5Sopt)}
               role={"img"}
             />
-          </p.PlasmicLink>
-        </p.Stack>
+          </PlasmicLink__>
+        </Stack__>
       </div>
     </div>
   ) as React.ReactElement | null;
@@ -468,7 +490,7 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   navbar: "div";
-  img: typeof p.PlasmicImg;
+  img: typeof PlasmicImg__;
   menus: "div";
   mnItem: "a";
   mnItem2: "a";
