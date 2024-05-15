@@ -11,13 +11,13 @@
   "dependencies": {
     "@ant-design/icons": "^5.2.6",
     "@ant-design/pro-components": "^2.6.4",
-    "@plasmicapp/cli": "^0.1.327",
+    "@plasmicapp/cli": "^0.1.330",
     "@plasmicapp/react-web": "^0.2.322",
     "@plasmicpkgs/antd5": "^0.0.200",
     "@plasmicpkgs/plasmic-basic-components": "^0.0.204",
     "@plasmicpkgs/plasmic-nav": "^0.0.155",
-    "@plasmicpkgs/plasmic-rich-components": "^1.0.180",
-    "@plasmicpkgs/react-awesome-reveal": "^3.8.191",
+    "@plasmicpkgs/plasmic-rich-components": "^1.0.184",
+    "@plasmicpkgs/react-awesome-reveal": "^3.8.196",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18"

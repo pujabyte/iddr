@@ -68,9 +68,6 @@
   padding: 144px 32px 64px;
 }
 .columns__a7Wpx {
-  --plsmc-rc-col-gap: 0px;
-}
-.columns__a7Wpx {
   display: flex;
   position: relative;
   width: 100%;
@@ -81,6 +78,7 @@
   flex-wrap: nowrap;
   max-width: 1280px;
   min-width: 0;
+  --plsmc-rc-col-gap: 0px;
 }
 .columns__a7Wpx > :nth-child(2n + 1) {
   width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
@@ -474,6 +472,7 @@
   flex-shrink: 1;
   flex-direction: row;
   min-width: 0;
+  --plsmc-rc-col-gap: 0px;
 }
 .columns__aqzXj > :global(.__wab_flex-container) {
   align-items: stretch;
@@ -493,9 +492,6 @@
   > picture
   > img {
   margin-left: 24px;
-}
-.columns__aqzXj {
-  --plsmc-rc-col-gap: 0px;
 }
 .columns__aqzXj > :global(.__wab_flex-container) > :nth-child(2n + 1) {
   width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
@@ -667,6 +663,7 @@
   flex-shrink: 1;
   flex-direction: row;
   min-width: 0;
+  --plsmc-rc-col-gap: 0px;
 }
 .columns__s3Jve > :global(.__wab_flex-container) {
   align-items: stretch;
@@ -686,9 +683,6 @@
   > picture
   > img {
   margin-left: 24px;
-}
-.columns__s3Jve {
-  --plsmc-rc-col-gap: 0px;
 }
 .columns__s3Jve > :global(.__wab_flex-container) > :nth-child(2n + 1) {
   width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
@@ -1223,6 +1217,7 @@
   flex-direction: row;
   background: none;
   min-width: 0;
+  --plsmc-rc-col-gap: 0px;
 }
 .columns__gWgGi > :global(.__wab_flex-container) {
   align-items: stretch;
@@ -1242,9 +1237,6 @@
   > picture
   > img {
   margin-left: 24px;
-}
-.columns__gWgGi {
-  --plsmc-rc-col-gap: 0px;
 }
 .columns__gWgGi > :global(.__wab_flex-container) > :nth-child(4n + 1) {
   width: calc((100% - 4 * var(--plsmc-rc-col-gap, 0px)) * 3 / 12);
@@ -1876,6 +1868,7 @@
   flex-shrink: 1;
   flex-direction: row;
   min-width: 0;
+  --plsmc-rc-col-gap: 0px;
 }
 .columns__vDqJ9 > :global(.__wab_flex-container) {
   align-items: stretch;
@@ -1895,9 +1888,6 @@
   > picture
   > img {
   margin-left: 24px;
-}
-.columns__vDqJ9 {
-  --plsmc-rc-col-gap: 0px;
 }
 .columns__vDqJ9 > :global(.__wab_flex-container) > :nth-child(2n + 1) {
   width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
