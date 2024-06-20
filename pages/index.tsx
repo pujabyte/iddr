@@ -3,9 +3,11 @@
 import * as React from "react";
 import * as ph from "@plasmicapp/react-web/lib/host";
 import GlobalContextsProvider from "../components/plasmic/iddr/PlasmicGlobalContextsProvider";
-import { ScreenVariantProvider } from "../components/plasmic/iddr/PlasmicGlobalVariant__Screen";
+import ScreenVariantProvider from "../components/plasmic/iddr/PlasmicGlobalVariant__Screen";
 import { PlasmicHomepage } from "../components/plasmic/iddr/PlasmicHomepage";
 import { useRouter } from "next/router";
+
+
 
 function Homepage() {
   // Use PlasmicHomepage to render this component as it was
