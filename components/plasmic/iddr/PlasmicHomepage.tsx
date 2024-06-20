@@ -153,8 +153,6 @@ function PlasmicHomepage__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const currentUser = useCurrentUser?.() || {};
-
   const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
     () => [
       {
@@ -1186,6 +1184,14 @@ function PlasmicHomepage__RenderFunc(props: {
                     date: "Last Updated, 1 may 2024",
                     url: [
                       "https://www.iddr.io/IDDR-Collateral-Report-30-April-2024.pdf"
+                    ]
+                  },
+                  {
+                    id: 9,
+                    desc: "Indonesia Digital Rupiah Collateral Report - 1 jun 2024",
+                    date: "Last Updated, 1 jun 2024",
+                    url: [
+                      "https://www.iddr.io/IDDR-Collateral-Report-31-Mei-2024.pdf"
                     ]
                   }
                 ]}
