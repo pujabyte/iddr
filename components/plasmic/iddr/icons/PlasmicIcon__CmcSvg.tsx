@@ -5,11 +5,11 @@
 import React from "react";
 import { classNames } from "@plasmicapp/react-web";
 
-export type CmcsvgIconProps = React.ComponentProps<"svg"> & {
+export type CmcSvgIconProps = React.ComponentProps<"svg"> & {
   title?: string;
 };
 
-export function CmcsvgIcon(props: CmcsvgIconProps) {
+export function CmcSvgIcon(props: CmcSvgIconProps) {
   const { className, style, title, ...restProps } = props;
   return (
     <svg
@@ -34,5 +34,5 @@ export function CmcsvgIcon(props: CmcsvgIconProps) {
   );
 }
 
-export default CmcsvgIcon;
+export default CmcSvgIcon;
 /* prettier-ignore-end */

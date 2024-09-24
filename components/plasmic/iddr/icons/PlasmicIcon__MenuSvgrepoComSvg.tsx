@@ -5,11 +5,11 @@
 import React from "react";
 import { classNames } from "@plasmicapp/react-web";
 
-export type MenuSvgrepoComsvgIconProps = React.ComponentProps<"svg"> & {
+export type MenuSvgrepoComSvgIconProps = React.ComponentProps<"svg"> & {
   title?: string;
 };
 
-export function MenuSvgrepoComsvgIcon(props: MenuSvgrepoComsvgIconProps) {
+export function MenuSvgrepoComSvgIcon(props: MenuSvgrepoComSvgIconProps) {
   const { className, style, title, ...restProps } = props;
   return (
     <svg
@@ -35,5 +35,5 @@ export function MenuSvgrepoComsvgIcon(props: MenuSvgrepoComsvgIconProps) {
   );
 }
 
-export default MenuSvgrepoComsvgIcon;
+export default MenuSvgrepoComSvgIcon;
 /* prettier-ignore-end */

@@ -73,8 +73,7 @@
           }
         }
       ],
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "ohDidvG9XsCeFumugENU3J",
@@ -474,8 +473,7 @@
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerBreadcrumb"
         }
       ],
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "58GpZjZCWTaJ8AUhpCwt2K",
@@ -497,8 +495,7 @@
           "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
         }
       ],
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -520,8 +517,7 @@
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
       ],
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
@@ -579,8 +575,7 @@
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
       ],
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "dJqK6LEBeKixAKagJBAmzL",
@@ -660,8 +655,8 @@
       "icons": [
         {
           "id": "WhOp2OsiY-D",
-          "name": "ChecksvgIcon",
-          "moduleFilePath": "plasmic/iddr/icons/PlasmicIcon__Checksvg.tsx"
+          "name": "CheckSvgIcon",
+          "moduleFilePath": "plasmic/iddr/icons/PlasmicIcon__CheckSvg.tsx"
         },
         {
           "id": "g3M_pomcN7I",
@@ -675,18 +670,18 @@
         },
         {
           "id": "XTdEHy648t",
-          "name": "MenuSvgrepoComsvgIcon",
-          "moduleFilePath": "plasmic/iddr/icons/PlasmicIcon__MenuSvgrepoComsvg.tsx"
+          "name": "MenuSvgrepoComSvgIcon",
+          "moduleFilePath": "plasmic/iddr/icons/PlasmicIcon__MenuSvgrepoComSvg.tsx"
         },
         {
           "id": "3wjTpps_Fo",
-          "name": "CloseBoldSvgrepoComsvgIcon",
-          "moduleFilePath": "plasmic/iddr/icons/PlasmicIcon__CloseBoldSvgrepoComsvg.tsx"
+          "name": "CloseBoldSvgrepoComSvgIcon",
+          "moduleFilePath": "plasmic/iddr/icons/PlasmicIcon__CloseBoldSvgrepoComSvg.tsx"
         },
         {
           "id": "IYcwKk4Nul",
-          "name": "GoogleDocsSvgrepoComsvgIcon",
-          "moduleFilePath": "plasmic/iddr/icons/PlasmicIcon__GoogleDocsSvgrepoComsvg.tsx"
+          "name": "GoogleDocsSvgrepoComSvgIcon",
+          "moduleFilePath": "plasmic/iddr/icons/PlasmicIcon__GoogleDocsSvgrepoComSvg.tsx"
         },
         {
           "id": "V54Kju9r17",
@@ -720,8 +715,8 @@
         },
         {
           "id": "n_1Fj4QpLk",
-          "name": "CmcsvgIcon",
-          "moduleFilePath": "plasmic/iddr/icons/PlasmicIcon__Cmcsvg.tsx"
+          "name": "CmcSvgIcon",
+          "moduleFilePath": "plasmic/iddr/icons/PlasmicIcon__CmcSvg.tsx"
         },
         {
           "id": "iOHy_awmyz",
@@ -743,7 +738,7 @@
         {
           "id": "wSilGcjgL",
           "name": "fandy.png",
-          "filePath": "../public/plasmic/iddr/images/fandypng.png"
+          "filePath": "../public/plasmic/iddr/images/fandyPng.png"
         },
         {
           "id": "mtbPUlf8h",
@@ -753,17 +748,17 @@
         {
           "id": "9kj8jg8UD",
           "name": "jane.png",
-          "filePath": "../public/plasmic/iddr/images/janepng.png"
+          "filePath": "../public/plasmic/iddr/images/janePng.png"
         },
         {
           "id": "f2jHqjrcR",
           "name": "yuli.png",
-          "filePath": "../public/plasmic/iddr/images/yulipng.png"
+          "filePath": "../public/plasmic/iddr/images/yuliPng.png"
         },
         {
           "id": "q5dmBnpIq",
           "name": "willy.png",
-          "filePath": "../public/plasmic/iddr/images/willypng.png"
+          "filePath": "../public/plasmic/iddr/images/willyPng.png"
         },
         {
           "id": "vbHVvKtuH",
@@ -773,22 +768,22 @@
         {
           "id": "ZGHhE6bzy",
           "name": "indonesian map.png",
-          "filePath": "../public/plasmic/iddr/images/indonesianMappng.png"
+          "filePath": "../public/plasmic/iddr/images/indonesianMapPng.png"
         },
         {
           "id": "IRUc9KI0r",
           "name": "hero-coin.png",
-          "filePath": "../public/plasmic/iddr/images/heroCoinpng.png"
+          "filePath": "../public/plasmic/iddr/images/heroCoinPng.png"
         },
         {
           "id": "2ubSOhicI",
           "name": "hero-coin-min.png",
-          "filePath": "../public/plasmic/iddr/images/heroCoinMinpng.png"
+          "filePath": "../public/plasmic/iddr/images/heroCoinMinPng.png"
         },
         {
           "id": "wMQhbYXMX",
           "name": "bg-min.png",
-          "filePath": "../public/plasmic/iddr/images/bgMinpng.png"
+          "filePath": "../public/plasmic/iddr/images/bgMinPng.png"
         },
         {
           "id": "-A2jRWU8Q",
@@ -798,22 +793,22 @@
         {
           "id": "1Bws4u9W1",
           "name": "iddr-hand-coin-hero.png",
-          "filePath": "../public/plasmic/iddr/images/iddrHandCoinHeropng.png"
+          "filePath": "../public/plasmic/iddr/images/iddrHandCoinHeroPng.png"
         },
         {
           "id": "4yCu3sITc",
           "name": "IDDR Rounded.jpg",
-          "filePath": "../public/plasmic/iddr/images/iddrRoundedjpg.jpg"
+          "filePath": "../public/plasmic/iddr/images/iddrRoundedJpg.jpg"
         },
         {
           "id": "foubGjpRS",
           "name": "iddr-temp-hero.png",
-          "filePath": "../public/plasmic/iddr/images/iddrTempHeropng.png"
+          "filePath": "../public/plasmic/iddr/images/iddrTempHeroPng.png"
         },
         {
           "id": "m1HaaOFVf",
           "name": "smartcontract.png",
-          "filePath": "../public/plasmic/iddr/images/smartcontractpng.png"
+          "filePath": "../public/plasmic/iddr/images/smartcontractPng.png"
         },
         {
           "id": "Ds-L1-b1m",
@@ -828,32 +823,32 @@
         {
           "id": "uFxuyTPQo",
           "name": "document-icon.png",
-          "filePath": "../public/plasmic/iddr/images/documentIconpng.png"
+          "filePath": "../public/plasmic/iddr/images/documentIconPng.png"
         },
         {
           "id": "G1bBrUHxZMTi",
           "name": "Bappebti-removeb.png",
-          "filePath": "../public/plasmic/iddr/images/bappebtiRemovebpng.png"
+          "filePath": "../public/plasmic/iddr/images/bappebtiRemovebPng.png"
         },
         {
           "id": "ooXZ7l3QalsI",
           "name": "Bappebti-removeb.png 2",
-          "filePath": "../public/plasmic/iddr/images/bappebtiRemovebpng2.png"
+          "filePath": "../public/plasmic/iddr/images/bappebtiRemovebPng2.png"
         },
         {
           "id": "RsURDTnlAKpH",
           "name": "Tampilan-Halaman-Portofolio-Kripto-di-Aplikasi-Nanovest.png",
-          "filePath": "../public/plasmic/iddr/images/tampilanHalamanPortofolioKriptoDiAplikasiNanovestpng.png"
+          "filePath": "../public/plasmic/iddr/images/tampilanHalamanPortofolioKriptoDiAplikasiNanovestPng.png"
         },
         {
           "id": "yZ3V2D4tyuFl",
           "name": "icons-right.webp",
-          "filePath": "../public/plasmic/iddr/images/iconsRightwebp.webp"
+          "filePath": "../public/plasmic/iddr/images/iconsRightWebp.webp"
         },
         {
           "id": "pr5uAPnabNYH",
           "name": "icons-left.webp",
-          "filePath": "../public/plasmic/iddr/images/iconsLeftwebp.webp"
+          "filePath": "../public/plasmic/iddr/images/iconsLeftWebp.webp"
         }
       ],
       "indirect": false,

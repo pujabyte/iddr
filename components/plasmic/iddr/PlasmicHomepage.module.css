@@ -43,7 +43,7 @@
   align-items: stretch;
   justify-content: flex-start;
   position: relative;
-  background: url("/plasmic/iddr/images/bgMinpng.png") left 50% top 50% / cover repeat;
+  background: url("/plasmic/iddr/images/bgMinPng.png") left 50% top 50% / cover repeat;
   width: 100%;
   height: auto;
   grid-column-start: 1 !important;
@@ -424,7 +424,7 @@
   display: block;
   width: 600px;
   height: 600px;
-  background: url("/plasmic/iddr/images/iddrHandCoinHeropng.png") top 50% left 50% / cover no-repeat;
+  background: url("/plasmic/iddr/images/iddrHandCoinHeroPng.png") top 50% left 50% / cover no-repeat;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__lhkpQ {
@@ -1801,7 +1801,7 @@
   width: 200px;
   height: 300px;
   max-width: 100%;
-  background: url("/plasmic/iddr/images/iconsLeftwebp.webp") 0% 0% / contain no-repeat;
+  background: url("/plasmic/iddr/images/iconsLeftWebp.webp") 0% 0% / contain no-repeat;
   flex-shrink: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -1815,7 +1815,7 @@
   width: 200px;
   height: 400px;
   max-width: 100%;
-  background: url("/plasmic/iddr/images/tampilanHalamanPortofolioKriptoDiAplikasiNanovestpng.png") 0% 0% / contain no-repeat;
+  background: url("/plasmic/iddr/images/tampilanHalamanPortofolioKriptoDiAplikasiNanovestPng.png") 0% 0% / contain no-repeat;
   flex-shrink: 0;
 }
 .freeBox___7DgB8 {
@@ -1824,7 +1824,7 @@
   width: 200px;
   height: 300px;
   max-width: 100%;
-  background: url("/plasmic/iddr/images/iconsRightwebp.webp") 0% 0% / contain no-repeat;
+  background: url("/plasmic/iddr/images/iconsRightWebp.webp") 0% 0% / contain no-repeat;
   flex-shrink: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {

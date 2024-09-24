@@ -5,12 +5,12 @@
 import React from "react";
 import { classNames } from "@plasmicapp/react-web";
 
-export type GoogleDocsSvgrepoComsvgIconProps = React.ComponentProps<"svg"> & {
+export type GoogleDocsSvgrepoComSvgIconProps = React.ComponentProps<"svg"> & {
   title?: string;
 };
 
-export function GoogleDocsSvgrepoComsvgIcon(
-  props: GoogleDocsSvgrepoComsvgIconProps
+export function GoogleDocsSvgrepoComSvgIcon(
+  props: GoogleDocsSvgrepoComSvgIconProps
 ) {
   const { className, style, title, ...restProps } = props;
   return (
@@ -46,5 +46,5 @@ export function GoogleDocsSvgrepoComsvgIcon(
   );
 }
 
-export default GoogleDocsSvgrepoComsvgIcon;
+export default GoogleDocsSvgrepoComSvgIcon;
 /* prettier-ignore-end */

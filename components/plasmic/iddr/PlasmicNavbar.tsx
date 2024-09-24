@@ -68,9 +68,9 @@ import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plas
 import projectcss from "./plasmic_iddr.module.css"; // plasmic-import: dJqK6LEBeKixAKagJBAmzL/projectcss
 import sty from "./PlasmicNavbar.module.css"; // plasmic-import: ThJz7UjPOLc/css
 
-import MenuSvgrepoComsvgIcon from "./icons/PlasmicIcon__MenuSvgrepoComsvg"; // plasmic-import: XTdEHy648t/icon
-import CloseBoldSvgrepoComsvgIcon from "./icons/PlasmicIcon__CloseBoldSvgrepoComsvg"; // plasmic-import: 3wjTpps_Fo/icon
-import CmcsvgIcon from "./icons/PlasmicIcon__Cmcsvg"; // plasmic-import: n_1Fj4QpLk/icon
+import MenuSvgrepoComSvgIcon from "./icons/PlasmicIcon__MenuSvgrepoComSvg"; // plasmic-import: XTdEHy648t/icon
+import CloseBoldSvgrepoComSvgIcon from "./icons/PlasmicIcon__CloseBoldSvgrepoComSvg"; // plasmic-import: 3wjTpps_Fo/icon
+import CmcSvgIcon from "./icons/PlasmicIcon__CmcSvg"; // plasmic-import: n_1Fj4QpLk/icon
 import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: V54Kju9r17/icon
 import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: lDkdlle9aD/icon
 
@@ -129,7 +129,16 @@ function PlasmicNavbar__RenderFunc(props: {
 }) {
   const { variants, overrides, forNode } = props;
 
-  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
+        Object.fromEntries(
+          Object.entries(props.args).filter(([_, v]) => v !== undefined)
+        )
+      ),
+    [props.args]
+  );
 
   const $props = {
     ...args,
@@ -380,7 +389,7 @@ function PlasmicNavbar__RenderFunc(props: {
           }}
           platform={"nextjs"}
         >
-          <MenuSvgrepoComsvgIcon
+          <MenuSvgrepoComSvgIcon
             className={classNames(projectcss.all, sty.svg__dMoHh)}
             role={"img"}
           />
@@ -390,7 +399,7 @@ function PlasmicNavbar__RenderFunc(props: {
           component={Link}
           platform={"nextjs"}
         >
-          <CloseBoldSvgrepoComsvgIcon
+          <CloseBoldSvgrepoComSvgIcon
             className={classNames(projectcss.all, sty.svg__al8He)}
             role={"img"}
           />
@@ -409,7 +418,7 @@ function PlasmicNavbar__RenderFunc(props: {
             platform={"nextjs"}
             target={"_blank"}
           >
-            <CmcsvgIcon
+            <CmcSvgIcon
               className={classNames(projectcss.all, sty.svg__j8Hg9)}
               role={"img"}
             />

@@ -71,8 +71,8 @@ import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plas
 import projectcss from "./plasmic_iddr.module.css"; // plasmic-import: dJqK6LEBeKixAKagJBAmzL/projectcss
 import sty from "./PlasmicMenuOverlay.module.css"; // plasmic-import: l7JCXcEFvGg/css
 
-import CloseBoldSvgrepoComsvgIcon from "./icons/PlasmicIcon__CloseBoldSvgrepoComsvg"; // plasmic-import: 3wjTpps_Fo/icon
-import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: WhOp2OsiY-D/icon
+import CloseBoldSvgrepoComSvgIcon from "./icons/PlasmicIcon__CloseBoldSvgrepoComSvg"; // plasmic-import: 3wjTpps_Fo/icon
+import CheckSvgIcon from "./icons/PlasmicIcon__CheckSvg"; // plasmic-import: WhOp2OsiY-D/icon
 import Icon38Icon from "./icons/PlasmicIcon__Icon38"; // plasmic-import: g3M_pomcN7I/icon
 
 createPlasmicElementProxy;
@@ -133,7 +133,16 @@ function PlasmicMenuOverlay__RenderFunc(props: {
 }) {
   const { variants, overrides, forNode } = props;
 
-  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
+        Object.fromEntries(
+          Object.entries(props.args).filter(([_, v]) => v !== undefined)
+        )
+      ),
+    [props.args]
+  );
 
   const $props = {
     ...args,
@@ -208,7 +217,7 @@ function PlasmicMenuOverlay__RenderFunc(props: {
               }}
               platform={"nextjs"}
             >
-              <CloseBoldSvgrepoComsvgIcon
+              <CloseBoldSvgrepoComSvgIcon
                 className={classNames(projectcss.all, sty.svg___1NQaF)}
                 role={"img"}
               />
@@ -293,7 +302,7 @@ function PlasmicMenuOverlay__RenderFunc(props: {
                   }
                 }}
                 startIcon={
-                  <ChecksvgIcon
+                  <CheckSvgIcon
                     className={classNames(projectcss.all, sty.svg__tU4D)}
                     role={"img"}
                   />
@@ -328,7 +337,7 @@ function PlasmicMenuOverlay__RenderFunc(props: {
                 }
                 link={"#about"}
                 startIcon={
-                  <ChecksvgIcon
+                  <CheckSvgIcon
                     className={classNames(projectcss.all, sty.svg__a7Iw)}
                     role={"img"}
                   />
@@ -363,7 +372,7 @@ function PlasmicMenuOverlay__RenderFunc(props: {
                 }
                 link={"#team"}
                 startIcon={
-                  <ChecksvgIcon
+                  <CheckSvgIcon
                     className={classNames(projectcss.all, sty.svg__xDm8R)}
                     role={"img"}
                   />
@@ -398,7 +407,7 @@ function PlasmicMenuOverlay__RenderFunc(props: {
                 }
                 link={"#contact"}
                 startIcon={
-                  <ChecksvgIcon
+                  <CheckSvgIcon
                     className={classNames(projectcss.all, sty.svg__eLa7H)}
                     role={"img"}
                   />
@@ -464,7 +473,7 @@ function PlasmicMenuOverlay__RenderFunc(props: {
                     }}
                     platform={"nextjs"}
                   >
-                    <CloseBoldSvgrepoComsvgIcon
+                    <CloseBoldSvgrepoComSvgIcon
                       className={classNames(projectcss.all, sty.svg__zje8J)}
                       role={"img"}
                     />

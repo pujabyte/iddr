@@ -78,17 +78,17 @@ import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plas
 import projectcss from "./plasmic_iddr.module.css"; // plasmic-import: dJqK6LEBeKixAKagJBAmzL/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: S-EPZS57Iq32/css
 
-import GoogleDocsSvgrepoComsvgIcon from "./icons/PlasmicIcon__GoogleDocsSvgrepoComsvg"; // plasmic-import: IYcwKk4Nul/icon
+import GoogleDocsSvgrepoComSvgIcon from "./icons/PlasmicIcon__GoogleDocsSvgrepoComSvg"; // plasmic-import: IYcwKk4Nul/icon
 import Icon38Icon from "./icons/PlasmicIcon__Icon38"; // plasmic-import: g3M_pomcN7I/icon
-import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: WhOp2OsiY-D/icon
+import CheckSvgIcon from "./icons/PlasmicIcon__CheckSvg"; // plasmic-import: WhOp2OsiY-D/icon
 import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: ljio8ldcWK/icon
 import Icon8Icon from "./icons/PlasmicIcon__Icon8"; // plasmic-import: ZLscOeex6V/icon
 import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: iDs7aDQs7T/icon
 import Icon5Icon from "./icons/PlasmicIcon__Icon5"; // plasmic-import: fM-swEdfd/icon
-import CmcsvgIcon from "./icons/PlasmicIcon__Cmcsvg"; // plasmic-import: n_1Fj4QpLk/icon
+import CmcSvgIcon from "./icons/PlasmicIcon__CmcSvg"; // plasmic-import: n_1Fj4QpLk/icon
 import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: V54Kju9r17/icon
 import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: lDkdlle9aD/icon
-import CloseBoldSvgrepoComsvgIcon from "./icons/PlasmicIcon__CloseBoldSvgrepoComsvg"; // plasmic-import: 3wjTpps_Fo/icon
+import CloseBoldSvgrepoComSvgIcon from "./icons/PlasmicIcon__CloseBoldSvgrepoComSvg"; // plasmic-import: 3wjTpps_Fo/icon
 
 createPlasmicElementProxy;
 
@@ -141,7 +141,16 @@ function PlasmicHomepage__RenderFunc(props: {
 }) {
   const { variants, overrides, forNode } = props;
 
-  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
+        Object.fromEntries(
+          Object.entries(props.args).filter(([_, v]) => v !== undefined)
+        )
+      ),
+    [props.args]
+  );
 
   const $props = {
     ...args,
@@ -207,7 +216,7 @@ function PlasmicHomepage__RenderFunc(props: {
             data-plasmic-override={overrides.pageMetadataOverride}
             className={classNames("__wab_instance", sty.pageMetadataOverride)}
             description={"Inovasi mata uang digital Nusantara"}
-            image={"/plasmic/iddr/images/iddrRoundedjpg.jpg"}
+            image={"/plasmic/iddr/images/iddrRoundedJpg.jpg"}
             title={"Indonesia Digital Rupiah"}
           />
 
@@ -299,7 +308,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           shape={"rounded"}
                           showStartIcon={true}
                           startIcon={
-                            <GoogleDocsSvgrepoComsvgIcon
+                            <GoogleDocsSvgrepoComSvgIcon
                               className={classNames(
                                 projectcss.all,
                                 sty.svg__ofam2
@@ -337,7 +346,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           link={"#about"}
                           shape={"rounded"}
                           startIcon={
-                            <ChecksvgIcon
+                            <CheckSvgIcon
                               className={classNames(
                                 projectcss.all,
                                 sty.svg__iDajW
@@ -392,7 +401,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           link={"https://www.nanovest.io/en/"}
                           shape={"rounded"}
                           startIcon={
-                            <GoogleDocsSvgrepoComsvgIcon
+                            <GoogleDocsSvgrepoComSvgIcon
                               className={classNames(
                                 projectcss.all,
                                 sty.svg__vxCiI
@@ -463,7 +472,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         displayWidth={"100%"}
                         loading={"lazy"}
                         src={{
-                          src: "/plasmic/iddr/images/indonesianMappng.png",
+                          src: "/plasmic/iddr/images/indonesianMapPng.png",
                           fullWidth: 780,
                           fullHeight: 349,
                           aspectRatio: undefined
@@ -943,7 +952,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       displayWidth={"200px"}
                       loading={"lazy"}
                       src={{
-                        src: "/plasmic/iddr/images/janepng.png",
+                        src: "/plasmic/iddr/images/janePng.png",
                         fullWidth: 550,
                         fullHeight: 551,
                         aspectRatio: undefined
@@ -992,7 +1001,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       displayWidth={"200px"}
                       loading={"lazy"}
                       src={{
-                        src: "/plasmic/iddr/images/yulipng.png",
+                        src: "/plasmic/iddr/images/yuliPng.png",
                         fullWidth: 638,
                         fullHeight: 638,
                         aspectRatio: undefined
@@ -1041,7 +1050,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       displayWidth={"200px"}
                       loading={"lazy"}
                       src={{
-                        src: "/plasmic/iddr/images/willypng.png",
+                        src: "/plasmic/iddr/images/willyPng.png",
                         fullWidth: 1200,
                         fullHeight: 1200,
                         aspectRatio: undefined
@@ -1209,6 +1218,14 @@ function PlasmicHomepage__RenderFunc(props: {
                     url: [
                       "https://www.iddr.io/IDDR-Collateral-Report-1-aug-2024.pdf"
                     ]
+                  },
+                  {
+                    id: 12,
+                    desc: "Indonesia Digital Rupiah Collateral Report - 1 aug 2024",
+                    date: "Last Updated, 1 sep 2024",
+                    url: [
+                      "https://www.iddr.io/IDDR-Collateral-Report-1-sep-2024.pdf"
+                    ]
                   }
                 ]}
                 name={"bankReport"}
@@ -1305,7 +1322,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       link={"https://www.nanovest.io"}
                       shape={"rounded"}
                       startIcon={
-                        <GoogleDocsSvgrepoComsvgIcon
+                        <GoogleDocsSvgrepoComSvgIcon
                           className={classNames(projectcss.all, sty.svg__zu1Wu)}
                           role={"img"}
                         />
@@ -1397,7 +1414,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         displayWidth={"300px"}
                         loading={"lazy"}
                         src={{
-                          src: "/plasmic/iddr/images/bappebtiRemovebpng2.png",
+                          src: "/plasmic/iddr/images/bappebtiRemovebPng2.png",
                           fullWidth: 432,
                           fullHeight: 137,
                           aspectRatio: undefined
@@ -1481,7 +1498,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   platform={"nextjs"}
                   target={"_blank"}
                 >
-                  <CmcsvgIcon
+                  <CmcSvgIcon
                     className={classNames(projectcss.all, sty.svg__bBfyP)}
                     role={"img"}
                   />
@@ -1610,7 +1627,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     }
                   }}
                   startIcon={
-                    <ChecksvgIcon
+                    <CheckSvgIcon
                       className={classNames(projectcss.all, sty.svg__t9Xdm)}
                       role={"img"}
                     />
@@ -1680,7 +1697,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     }
                   }}
                   startIcon={
-                    <ChecksvgIcon
+                    <CheckSvgIcon
                       className={classNames(projectcss.all, sty.svg___8FBP)}
                       role={"img"}
                     />
@@ -1750,7 +1767,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     }
                   }}
                   startIcon={
-                    <ChecksvgIcon
+                    <CheckSvgIcon
                       className={classNames(projectcss.all, sty.svg__nttXz)}
                       role={"img"}
                     />
@@ -1820,7 +1837,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     }
                   }}
                   startIcon={
-                    <ChecksvgIcon
+                    <CheckSvgIcon
                       className={classNames(projectcss.all, sty.svg__d81Vk)}
                       role={"img"}
                     />
@@ -1887,7 +1904,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 }}
                 platform={"nextjs"}
               >
-                <CloseBoldSvgrepoComsvgIcon
+                <CloseBoldSvgrepoComSvgIcon
                   className={classNames(projectcss.all, sty.svg__m6LrQ)}
                   role={"img"}
                 />
