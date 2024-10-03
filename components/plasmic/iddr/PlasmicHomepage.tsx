@@ -1165,7 +1165,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   },
                   {
                     id: 5,
-                    desc: "Indonesia Digital Rupiah Collateral Report - 1 feb 2024",
+                    desc: "Indonesia Digital Rupiah Collateral Report - 1 Feb 2024",
                     date: "Last Updated, 4 Feb 2024",
                     url: [
                       "https://www.iddr.io/IDDR-Collateral-Report-1-feb-2024.pdf"
@@ -1173,7 +1173,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   },
                   {
                     id: 6,
-                    desc: "Indonesia Digital Rupiah Collateral Report - 1 mar 2024",
+                    desc: "Indonesia Digital Rupiah Collateral Report - 1 Mar 2024",
                     date: "Last Updated, 8 Mar 2024",
                     url: [
                       "https://www.iddr.io/IDDR-Collateral-Report-1-mar-2024.pdf"
@@ -1181,7 +1181,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   },
                   {
                     id: 7,
-                    desc: "Indonesia Digital Rupiah Collateral Report - 1 apr 2024",
+                    desc: "Indonesia Digital Rupiah Collateral Report - 1 Apr 2024",
                     date: "Last Updated, 1 Apr 2024",
                     url: [
                       "https://www.iddr.io/IDDR-Collateral-Report-31-Mar-2024.pdf"
@@ -1189,7 +1189,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   },
                   {
                     id: 8,
-                    desc: "Indonesia Digital Rupiah Collateral Report - 1 may 2024",
+                    desc: "Indonesia Digital Rupiah Collateral Report - 1 May 2024",
                     date: "Last Updated, 1 may 2024",
                     url: [
                       "https://www.iddr.io/IDDR-Collateral-Report-30-April-2024.pdf"
@@ -1197,7 +1197,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   },
                   {
                     id: 9,
-                    desc: "Indonesia Digital Rupiah Collateral Report - 1 jun 2024",
+                    desc: "Indonesia Digital Rupiah Collateral Report - 1 Jun 2024",
                     date: "Last Updated, 1 jun 2024",
                     url: [
                       "https://www.iddr.io/IDDR-Collateral-Report-31-Mei-2024.pdf"
@@ -1205,7 +1205,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   },
                   {
                     id: 10,
-                    desc: "Indonesia Digital Rupiah Collateral Report - 1 jul 2024",
+                    desc: "Indonesia Digital Rupiah Collateral Report - 1 Jul 2024",
                     date: "Last Updated, 1 jul 2024",
                     url: [
                       "https://www.iddr.io/IDDR-Collateral-Report-1-Juli-2024.pdf"
@@ -1213,7 +1213,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   },
                   {
                     id: 11,
-                    desc: "Indonesia Digital Rupiah Collateral Report - 1 aug 2024",
+                    desc: "Indonesia Digital Rupiah Collateral Report - 1 Aug 2024",
                     date: "Last Updated, 1 aug 2024",
                     url: [
                       "https://www.iddr.io/IDDR-Collateral-Report-1-aug-2024.pdf"
@@ -1221,7 +1221,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   },
                   {
                     id: 12,
-                    desc: "Indonesia Digital Rupiah Collateral Report - 1 sep 2024",
+                    desc: "Indonesia Digital Rupiah Collateral Report - 1 Sep 2024",
                     date: "Last Updated, 1 sep 2024",
                     url: [
                       "https://www.iddr.io/IDDR-Collateral-Report-1-sep-2024.pdf"
@@ -1229,7 +1229,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   },
                   {
                     id: 13,
-                    desc: "Indonesia Digital Rupiah Collateral Report - 1 oct 2024",
+                    desc: "Indonesia Digital Rupiah Collateral Report - 1 Oct 2024",
                     date: "Last Updated, 1 oct 2024",
                     url: [
                       "https://www.iddr.io/IDDR-Collateral-Report-30-Sep-2024.pdf"
