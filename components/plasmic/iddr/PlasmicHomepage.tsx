@@ -228,10 +228,20 @@ function PlasmicHomepage__RenderFunc(props: {
               "navbar",
               "isMenuOpen"
             ])}
-            onIsMenuOpenChange={generateStateOnChangeProp($state, [
-              "navbar",
-              "isMenuOpen"
-            ])}
+            onIsMenuOpenChange={async (...eventArgs: any) => {
+              generateStateOnChangeProp($state, ["navbar", "isMenuOpen"]).apply(
+                null,
+                eventArgs
+              );
+
+              if (
+                eventArgs.length > 1 &&
+                eventArgs[1] &&
+                eventArgs[1]._plasmic_state_init_
+              ) {
+                return;
+              }
+            }}
           />
 
           <div className={classNames(projectcss.all, sty.freeBox__vB9)}>
@@ -1249,6 +1259,14 @@ function PlasmicHomepage__RenderFunc(props: {
                     date: "Last Updated, 1 dec 2024",
                     url: [
                       "https://www.iddr.io/IDDR-Collateral-Report-30-Nov-2024.pdf"
+                    ]
+                  },
+                  {
+                    id: 16,
+                    desc: "Indonesia Digital Rupiah Collateral Report - 31 Des 2024",
+                    date: "Last Updated, 3 jan 2024",
+                    url: [
+                      "https://www.iddr.io/IDDR-Collateral-Report-31-Dec-2024.pdff"
                     ]
                   }
                 ]}
