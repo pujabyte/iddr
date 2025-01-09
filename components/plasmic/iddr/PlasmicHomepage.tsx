@@ -108,7 +108,6 @@ export type PlasmicHomepage__OverridesType = {
   h3?: Flex__<"h3">;
   title?: Flex__<"div">;
   desc?: Flex__<"div">;
-  desc2?: Flex__<"div">;
   desc3?: Flex__<"div">;
   desc4?: Flex__<"div">;
   title3?: Flex__<"div">;
@@ -943,55 +942,6 @@ function PlasmicHomepage__RenderFunc(props: {
                         )}
                       >
                         {"CEO"}
-                      </div>
-                    </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.column__exXk1)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__obYqS)}
-                      displayHeight={"200px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"200px"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/iddr/images/janePng.png",
-                        fullWidth: 550,
-                        fullHeight: 551,
-                        aspectRatio: undefined
-                      }}
-                    />
-
-                    <div
-                      data-plasmic-name={"desc2"}
-                      data-plasmic-override={overrides.desc2}
-                      className={classNames(projectcss.all, sty.desc2)}
-                    >
-                      <h6
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h6,
-                          projectcss.__wab_text,
-                          sty.h6__wDsiE
-                        )}
-                      >
-                        {"Jane Malinda Sutanto"}
-                      </h6>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__pDx96
-                        )}
-                      >
-                        {"CFO"}
                       </div>
                     </div>
                   </Stack__>
@@ -1967,7 +1917,6 @@ const PlasmicDescendants = {
     "h3",
     "title",
     "desc",
-    "desc2",
     "desc3",
     "desc4",
     "title3",
@@ -1985,7 +1934,6 @@ const PlasmicDescendants = {
   h3: ["h3"],
   title: ["title"],
   desc: ["desc"],
-  desc2: ["desc2"],
   desc3: ["desc3"],
   desc4: ["desc4"],
   title3: ["title3"],
@@ -2008,7 +1956,6 @@ type NodeDefaultElementType = {
   h3: "h3";
   title: "div";
   desc: "div";
-  desc2: "div";
   desc3: "div";
   desc4: "div";
   title3: "div";
@@ -2087,7 +2034,6 @@ export const PlasmicHomepage = Object.assign(
     h3: makeNodeComponent("h3"),
     title: makeNodeComponent("title"),
     desc: makeNodeComponent("desc"),
-    desc2: makeNodeComponent("desc2"),
     desc3: makeNodeComponent("desc3"),
     desc4: makeNodeComponent("desc4"),
     title3: makeNodeComponent("title3"),

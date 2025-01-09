@@ -1238,17 +1238,14 @@
   > img {
   margin-left: 24px;
 }
-.columns__gWgGi > :global(.__wab_flex-container) > :nth-child(4n + 1) {
-  width: calc((100% - 4 * var(--plsmc-rc-col-gap, 0px)) * 3 / 12);
+.columns__gWgGi > :global(.__wab_flex-container) > :nth-child(3n + 1) {
+  width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 4 / 12);
 }
-.columns__gWgGi > :global(.__wab_flex-container) > :nth-child(4n + 2) {
-  width: calc((100% - 4 * var(--plsmc-rc-col-gap, 0px)) * 3 / 12);
+.columns__gWgGi > :global(.__wab_flex-container) > :nth-child(3n + 2) {
+  width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 4 / 12);
 }
-.columns__gWgGi > :global(.__wab_flex-container) > :nth-child(4n + 3) {
-  width: calc((100% - 4 * var(--plsmc-rc-col-gap, 0px)) * 3 / 12);
-}
-.columns__gWgGi > :global(.__wab_flex-container) > :nth-child(4n + 4) {
-  width: calc((100% - 4 * var(--plsmc-rc-col-gap, 0px)) * 3 / 12);
+.columns__gWgGi > :global(.__wab_flex-container) > :nth-child(3n + 3) {
+  width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 4 / 12);
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .columns__gWgGi {
@@ -1343,73 +1340,6 @@
   min-width: 0;
 }
 .text__x2GMl {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  text-align: center;
-  color: #626e99;
-  min-width: 0;
-}
-.column__exXk1 {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  min-width: 0;
-}
-.column__exXk1 > :global(.__wab_flex-container) {
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  min-width: 0;
-  margin-top: calc(0px - 24px);
-  height: calc(100% + 24px);
-}
-.column__exXk1 > :global(.__wab_flex-container) > *,
-.column__exXk1 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.column__exXk1 > :global(.__wab_flex-container) > picture > img,
-.column__exXk1
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-top: 24px;
-}
-.img__obYqS {
-  position: relative;
-  object-fit: cover;
-  max-width: 100%;
-  width: 200px;
-  height: 200px;
-  flex-shrink: 0;
-  border-radius: 200px;
-}
-.img__obYqS > picture > img {
-  object-fit: cover;
-}
-.desc2 {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  min-width: 0;
-  padding: 8px;
-}
-.h6__wDsiE {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  text-align: center;
-  min-width: 0;
-}
-.text__pDx96 {
   position: relative;
   width: 100%;
   height: auto;
