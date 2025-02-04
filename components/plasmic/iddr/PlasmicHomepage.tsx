@@ -213,7 +213,6 @@ function PlasmicHomepage__RenderFunc(props: {
           <PlasmicHead
             data-plasmic-name={"pageMetadataOverride"}
             data-plasmic-override={overrides.pageMetadataOverride}
-            className={classNames("__wab_instance", sty.pageMetadataOverride)}
             description={"Inovasi mata uang digital Nusantara"}
             image={"/plasmic/iddr/images/iddrRoundedJpg.jpg"}
             title={"Indonesia Digital Rupiah"}
@@ -1216,7 +1215,15 @@ function PlasmicHomepage__RenderFunc(props: {
                     desc: "Indonesia Digital Rupiah Collateral Report - 31 Des 2024",
                     date: "Last Updated, 3 jan 2024",
                     url: [
-                      "https://www.iddr.io/IDDR-Collateral-Report-31-Dec-2024.pdff"
+                      "https://www.iddr.io/IDDR-Collateral-Report-31-Dec-2024.pdf"
+                    ]
+                  },
+                  {
+                    id: 17,
+                    desc: "Indonesia Digital Rupiah Collateral Report - 31 Jan 2025",
+                    date: "Last Updated, 4 feb 2025",
+                    url: [
+                      "https://www.iddr.io/IDDR-Collateral-Report-31-Jan-2025.pdf"
                     ]
                   }
                 ]}
@@ -1238,7 +1245,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       })()}
                       data={(() => {
                         try {
-                          return $ctx.bankReport;
+                          return $ctx.bankReport.sort((a, b) => b.id - a.id);
                         } catch (e) {
                           if (
                             e instanceof TypeError ||
