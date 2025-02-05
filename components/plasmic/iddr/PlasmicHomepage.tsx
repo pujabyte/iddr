@@ -312,7 +312,9 @@ function PlasmicHomepage__RenderFunc(props: {
                               role={"img"}
                             />
                           }
-                          link={"/IDDR%20whitepaper%20-%2025%20May%202023.pdf"}
+                          link={
+                            "/IDDR%20whitepaper%20-%20v1.5%20January%202025.pdf"
+                          }
                           shape={"rounded"}
                           showStartIcon={true}
                           startIcon={
