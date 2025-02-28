@@ -1401,7 +1401,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             }
                             style={{ color: "#FFFDFD" }}
                           >
-                            {"Supervised by"}
+                            {"Whitelisted by the regulatory of"}
                           </span>
                         </React.Fragment>
                       </div>
